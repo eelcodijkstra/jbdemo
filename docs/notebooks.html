@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toetsvragen-demo &#8212; Jupyter Book demo</title>
+    <title>Content with notebooks &#8212; Jupyter Book demo</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -65,6 +65,8 @@
     <script src="_static/js/.ipynb_checkpoints/parsons-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -74,8 +76,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Opdracht-demo" href="opdracht-demo.html" />
-    <link rel="prev" title="Welkom bij de Jupyter Book demo" href="intro.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Jupyter Notebook" href="jupyter-notebook.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -124,9 +126,9 @@
   Voorbeelden
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="mchoice-demo.html">
    Toetsvragen-demo
   </a>
  </li>
@@ -168,9 +170,9 @@
   Jupyter Book
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Content with notebooks
   </a>
  </li>
@@ -259,7 +261,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/mchoice-demo.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/notebooks.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -279,7 +281,7 @@
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmchoice-demo.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
         
@@ -300,7 +302,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/mchoice-demo.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/notebooks.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Lancering Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -323,23 +325,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multiple-choice">
-   Multiple choice
+  <a class="reference internal nav-link" href="#markdown-notebooks">
+   Markdown + notebooks
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#drag-drop">
-   Drag &amp; drop
+  <a class="reference internal nav-link" href="#myst-markdown">
+   MyST markdown
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fillintheblank">
-   Fillintheblank
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#parsons-puzzels">
-   Parsons’ puzzels
+  <a class="reference internal nav-link" href="#code-blocks-and-outputs">
+   Code blocks and outputs
   </a>
  </li>
 </ul>
@@ -353,188 +350,83 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="toetsvragen-demo">
-<span id="id1"></span><h1>Toetsvragen-demo<a class="headerlink" href="#toetsvragen-demo" title="Permalink to this headline">¶</a></h1>
-<p>Voor JupyterBook ontwikkelen we een extensie voor toetsvragen, in het bijzonder voor <em>formatief</em> toetsen in het lesmateriaal.</p>
-<p>Je kunt de volgende toetsformaten gebruiken:</p>
-<ul class="simple">
-<li><p>multiple choice</p></li>
-<li><p>drag &amp; drop - plaats de juiste componenten bij elkaar</p></li>
-<li><p>fillintheblank</p></li>
-<li><p>Parsons’ puzzels</p></li>
-</ul>
-<p>Hieronder geven we een aantal voorbeelden. In de broncode van het Jupyter Notebook kun je ook zien hoe het formaat voor deze vragen eruit ziet.</p>
-<div class="section" id="multiple-choice">
-<h2>Multiple choice<a class="headerlink" href="#multiple-choice" title="Permalink to this headline">¶</a></h2>
-<form class="mchoice admonition" onsubmit="return false;" data-correct="a">
-<p class="admonition-title">Toetsvraag<span> - Vraag 1</span></p>
-<div class="section" id="question">
-<p>Welke van de onderstaande uitspraken is juist?</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="content-with-notebooks">
+<span id="jupyter-book"></span><h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>You can also create content with Jupyter Notebooks. This means that you can include
+code blocks and their outputs in your book.</p>
+<div class="section" id="markdown-notebooks">
+<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
+<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
+<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+math^{blocks}
+\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\mbox{mean} la_{tex} \\ \\
+math blocks
+\end{aligned}
+\end{split}\]</div>
+<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
 </div>
+<div class="section" id="myst-markdown">
+<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Permalink to this headline">¶</a></h2>
+<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
+out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
+or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
+</div>
+<div class="section" id="code-blocks-and-outputs">
+<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Book will also embed your code blocks and output in your book.
+For example, here’s some sample Matplotlib code:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.pyplot._IonContext at 0x7fbbc01aa280&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
 
-  <div>
-    <label>
-      <input type="radio" name="answer" value="a"> a)
-het web is een toepassing van het internet
-    </label>
-  </div>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
+<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
 
-  <div>
-    <label>
-      <input type="radio" name="answer" value="b"> b)
-het internet is een toepassing van het web
-    </label>
-  </div>
 
-  <div>
-    <label>
-      <input type="radio" name="answer" value="c"> c)
-geen van beide
-    </label>
-  </div>
+<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
+<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
 
-  <div class="buttonpart">
-    <button type="submit" class="checkbutton"> Check </button>
-    <button type="reset" class="resetbutton" hidden> Reset </button>
-  </div>
-<p class="feedback"></p>
-<ul class="feedbacklist">
-<li data-value="a" hidden> a) Inderdaad</li>
-<li data-value="b" hidden> b) Lees de inleiding van &quot;Netwerken&quot; nog eens door</li>
-<li data-value="c" hidden> c) Zie de inleiding van &quot;Netwerken&quot;</li>
-</ul>
-<p></p>
-</form>
-<form class="mchoice admonition" onsubmit="return false;" data-correct="c">
-<p class="admonition-title">Toetsvraag<span> - titel van de vraag</span></p>
-<div class="section" id="question">
-<p>Een mogelijk uitgebreide vraag, met figuren, formules, e.d.</p>
-<p>De beschrijving van de vraag wordt afgesloten met een lijst van mogelijke antwoorden; bij elk antwoord is feedback mogelijk.</p>
-</div>
-
-  <div>
-    <label>
-      <input type="radio" name="answer" value="a"> a)
-antwoord a
-    </label>
-  </div>
-
-  <div>
-    <label>
-      <input type="radio" name="answer" value="b"> b)
-antwoord b
-    </label>
-  </div>
-
-  <div>
-    <label>
-      <input type="radio" name="answer" value="c"> c)
-antwoord c
-    </label>
-  </div>
-
-  <div>
-    <label>
-      <input type="radio" name="answer" value="d"> d)
-antwoord d
-    </label>
-  </div>
-
-  <div class="buttonpart">
-    <button type="submit" class="checkbutton"> Check </button>
-    <button type="reset" class="resetbutton" hidden> Reset </button>
-  </div>
-<p class="feedback"></p>
-<ul class="feedbacklist">
-<li data-value="a" hidden> a) feedbach bij antwoord a</li>
-<li data-value="b" hidden> b) feedback bij antwoord b</li>
-<li data-value="c" hidden> c) feedback bij antwoord c</li>
-<li data-value="d" hidden> d) feedback bij antwoord d</li>
-</ul>
-<p></p>
-</form>
-</div>
-<div class="section" id="drag-drop">
-<h2>Drag &amp; drop<a class="headerlink" href="#drag-drop" title="Permalink to this headline">¶</a></h2>
-<p>Bij een drag&amp;drop-vraag moeten elementen via drag and drop bij de bijbehorende elementen geplaatst worden, bijvoorbeeld een term bij een definie.</p>
-<p>(Meestal gaan we ervan uit dat de linker elementen een kortere tekst hebben dan de rechter elementen.)</p>
-<div class="dragndrop admonition"><p class="admonition-title">Toetsvraag<span> - Landen en steden</span></p>
-<div class="section" id="question">
-<p>Plaats de steden bij de landen.</p>
-<p><strong>Let op!</strong> Niet alle genoemde landen hebben een stad in de lijst; en niet alle steden hebben een land in de lijst.</p>
-</div>
-<div class="dndcontainer">
-  <div class="dndsourcelist" data-value="no-target">
-<div class="dndsourceitem" draggable="true" id="dragndrop-01" data-value="a">
-<p>Dokkum</p>
-</div>
-<div class="dndsourceitem" draggable="true" id="dragndrop-00" data-value="a">
-<p>Amsterdam</p>
-</div>
-<div class="dndsourceitem" draggable="true" id="dragndrop-03" data-value="no-target">
-<p>Dublin</p>
-</div>
-<div class="dndsourceitem" draggable="true" id="dragndrop-02" data-value="b">
-<p>Antwerpen</p>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+</pre></div>
 </div>
 </div>
-  <div class="dndtargetlist">
-<div class="dndtargetitem" id="dndtarget-a" data-value="a">
-<p>Nederland</p>
-</div>
-<div class="dndtargetitem" id="dndtarget-b" data-value="b">
-<p>België</p>
-</div>
-<div class="dndtargetitem" id="dndtarget-c" data-value="c">
-<p>Verenigd Koninkrijk</p>
-</div>
-  </div>
-</div>
-<button class="dndcheckbutton">Check</button></div>
-</div>
-<div class="section" id="fillintheblank">
-<h2>Fillintheblank<a class="headerlink" href="#fillintheblank" title="Permalink to this headline">¶</a></h2>
-<p>Bij een “fillintheblank” moet een antwoord gegeven worden dat in een opengelaten vakje past. Het antwoord kan een getal zijn of een string. Bij een getal kan gecontroleerd worden of dit in een bepaald bereik ligt. Een string kan gecontroleerd worden via een reguliere expressie.</p>
-<div class="fitb admonition"><p class="admonition-title">Toetsvraag<span> - vraag 3</span></p>
-<div class="section" id="question">
-<p>Het resultaat van <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">*</span> <span class="pre">3</span></code> in Python is <input type="text" class="fitbanswer" id="fitb-answer-0-0" data-type="range" data-answer="7" data-answer2="7"></input>.</p>
-<p>Geef een voorbeeld van een Pascal identifier, met een selectie van letters, cijfers, en andere tekens <input type="text" class="fitbanswer" id="fitb-answer-0-1" data-type="regexp" data-answer="^[a-zA-Z][_0-9a-zA-Z]*$" data-answer2=""></input></p>
-</div>
-<ul class="fitbfeedbacklist" hidden>
-<li data-value="a"><p>7</p>
-</li><li data-value="b"><p>begint met een letter, dan letters, cijfers, of <code class="docutils literal notranslate"><span class="pre">_</span></code></p>
-</li></ul>
-<button class="fitbcheckbutton">Check</button>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks_2_0.png" src="_images/notebooks_2_0.png" />
 </div>
 </div>
-<div class="section" id="parsons-puzzels">
-<h2>Parsons’ puzzels<a class="headerlink" href="#parsons-puzzels" title="Permalink to this headline">¶</a></h2>
-<p>In een Parsons’ puzzel moet je de regels van een programma in de goede volgorde plaatsen, met de juiste indentatie.</p>
-<div class="parsons admonition"><p class="admonition-title">Toetsvraag<span> - Vraag 5</span></p>
-<div class="section" id="question">
-<p>Dit is de inleidende tekst.</p>
-<p>Deze kan uit meerdere paragrafen bestaan. Dit voorbeeld betreft een (Python) programma om de getallen 0..9 af te drukken.</p>
-<p>Plaats de regels van het onderstaande programma in de juiste volgorde, met de juiste indentatie.</p>
-</div>
-<div class="parsons-container">
-<div class="parsons-source">
-<div class="parsons-item" draggable="true" id="parsons-0-1" data-value="1" data-indent="0">
-x = 0</div>
-<div class="parsons-item" draggable="true" id="parsons-0-3" data-value="3" data-indent="1">
-print(x)</div>
-<div class="parsons-item" draggable="true" id="parsons-0-4" data-value="4" data-indent="1">
-x = x + 1</div>
-<div class="parsons-item" draggable="true" id="parsons-0-2" data-value="2" data-indent="0">
-while x < 10:</div>
-</div>
-
-    <div class="parsons-target">
-      <div class="parsons-column1"> </div>
-      <div class="parsons-column2"> </div>
-      <div class="parsons-column3"> </div>
-    </div>
-    </div>
-<button class="parsons-checkbutton">Check</button></div>
+<p>There is a lot more that you can do with outputs (such as including interactive outputs)
+with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
 </div>
 </div>
 
@@ -568,19 +460,19 @@ while x < 10:</div>
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="intro.html" title="previous page">
+        <a class="left-prev" href="jupyter-notebook.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Welkom bij de Jupyter Book demo</p>
+                <p class="prevnext-title">Jupyter Notebook</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="opdracht-demo.html" title="next page">
+        <a class="right-next" href="markdown.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Opdracht-demo</p>
+                <p class="prevnext-title">Markdown Files</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

@@ -3,3 +3,5 @@
 _build/.doctrees/*
 ext/.ipynb_checkpoints/*
 ext/__pycache__/*
+_build/*
+
