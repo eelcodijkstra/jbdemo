@@ -1,0 +1,5 @@
+.ipynb_checkpoints/*
+.DS_Store
+_build/.doctrees/*
+ext/.ipynb_checkpoints/*
+ext/__pycache__/*

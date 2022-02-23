@@ -1,0 +1,60 @@
+/*********************************************
+* Dragndrop *
+*********************************************/
+
+div.dragndrop {
+  border-color: rgba(var(--pst-color-admonition-hint),1);
+  background-color: rgba(var(--pst-color-admonition-hint),0.05);
+}
+
+div.dragndrop p.admonition-title::before {
+  content: "\f044";
+  color: rgba(var(--pst-color-admonition-hint),1);    
+}
+
+div.dragndrop p.admonition-title {
+  background-color: rgba(var(--pst-color-admonition-hint),0.1);
+}
+
+div.dragndrop div.dndcontainer {
+    display: flex;
+}
+
+div.dndsourcelist {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+/*    background-color: rgba(var(--pst-color-admonition-hint),0.1); */
+/*    border: 1px solid rgba(var(--pst-color-admonition-hint),0.5); */
+}
+
+div.dndtargetlist {
+    width: 65%;
+    border: 1px solid rgba(var(--pst-color-admonition-hint),0.5);
+    margin: 10px;
+    border-radius: 8px;
+/*    background-color: rgba(var(--pst-color-admonition-hint),0.1); */ 
+}
+
+div.dndsourceitem {
+    border: 1px solid rgba(var(--pst-color-admonition-hint),0.5);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: rgba(var(--pst-color-admonition-hint),0.1);
+    
+}
+
+div.dndtargetitem {
+    border: 1px solid rgba(var(--pst-color-admonition-hint),0.5);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: rgba(var(--pst-color-admonition-hint),0.05);
+}
+
+div.dragndrop button.dndcheckbutton {
+  background-color: rgba(var(--pst-color-admonition-hint),0.1);
+  border-color: rgba(var(--pst-color-admonition-hint),0.3);  
+  border-radius: 8px;
+}

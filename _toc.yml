@@ -1,0 +1,34 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+- caption: Voorbeelden
+  chapters:
+  - file: mchoice-demo
+  - file: opdracht-demo
+  - file: microbit-1b  
+  - file: sphinx-vb
+  - file: uitwerkingen
+  
+- caption: Jupyter Notebook
+  chapters:
+  - file: jupyter-notebook
+  
+- caption: Jupyter Book
+  chapters:
+  - file: notebooks  
+  - file: markdown
+
+- caption: Infrastructuur
+  chapters:
+  - file: jb-infrastructuur
+  
+- caption: Rest
+  chapters:
+  - file: over-dit-boek
+  - file: todos
+  - file: testjb
+  - file: todolist

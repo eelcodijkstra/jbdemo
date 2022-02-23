@@ -1,0 +1,43 @@
+/*********************************************
+* Variables *
+*********************************************/
+:root {
+/*  --note-title-color: rgba(68,138,255,.1); */
+/*  --xnote-title-color: rgba(252, 248, 227, .7); */
+/*  --xnote-title-color: rgba(var(--pst-color-admonition-hint), 0.7) */
+  --note-border-color: #007bff;
+  --grey-border-color: #ccc;
+}
+
+/*********************************************
+* MChoice *
+*********************************************/
+form.mchoice {
+  border-color: rgba(var(--pst-color-admonition-hint),1);
+/*  background-color: var(--xnote-title-color); */
+  background-color: rgba(var(--pst-color-admonition-hint),0.05);
+}
+
+form.mchoice p.admonition-title {
+/*  background-color: var(--xnote-title-color); */
+  background-color: rgba(var(--pst-color-admonition-hint),0.1);    
+}
+
+form.mchoice p.admonition-title::before {
+  content: "\f044";
+  color: rgba(var(--pst-color-admonition-hint),1);
+}
+
+form.mchoice #question {
+  margin-bottom: 10px;
+}
+
+form.mchoice div.buttonspart {
+  margin-top: 5px; 
+}
+
+form.mchoice button.checkbutton {
+  background-color: rgba(var(--pst-color-admonition-hint),0.1);
+  border-color: rgba(var(--pst-color-admonition-hint),0.3);  
+  border-radius: 8px;
+}
