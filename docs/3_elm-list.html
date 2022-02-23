@@ -1,0 +1,1017 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.3 Intro Lists &#8212; Jupyter Book demo</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/patch-next-bug.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/mchoice.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/fitb-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/patch-next-bug-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/parsons-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/.ipynb_checkpoints/dragndrop-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/js/mchoice.js"></script>
+    <script src="_static/js/dragndrop.js"></script>
+    <script src="_static/js/fitb.js"></script>
+    <script src="_static/js/parsons.js"></script>
+    <script src="_static/js/dragndrop.js"></script>
+    <script src="_static/js/parsons.js"></script>
+    <script src="_static/js/fitb.js"></script>
+    <script src="_static/js/mchoice.js"></script>
+    <script src="_static/js/.ipynb_checkpoints/mchoice-checkpoint.js"></script>
+    <script src="_static/js/.ipynb_checkpoints/dragndrop-checkpoint.js"></script>
+    <script src="_static/js/.ipynb_checkpoints/fitb-checkpoint.js"></script>
+    <script src="_static/js/.ipynb_checkpoints/parsons-checkpoint.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Microbit les 1b" href="microbit-1b.html" />
+    <link rel="prev" title="Opdracht-demo" href="opdracht-demo.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Jupyter Book demo</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welkom bij de Jupyter Book demo
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voorbeelden
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="mchoice-demo.html">
+   Toetsvragen-demo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="opdracht-demo.html">
+   Opdracht-demo
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3.3 Intro Lists
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="microbit-1b.html">
+   Microbit les 1b
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sphinx-vb.html">
+   Voorbeelden - Sphinx layout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="uitwerkingen.html">
+   Uitwerkingen van de opdrachten
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Notebook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-notebook.html">
+   Jupyter Notebook
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Infrastructuur
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jb-infrastructuur.html">
+   De Jupyter Book infrastructuur
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Rest
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="over-dit-boek.html">
+   Over dit Jupyter boek
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todos.html">
+   Todo’s en wensen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="testjb.html">
+   Test
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todolist.html">
+   Lijst van todo’s
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/3_elm-list.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/eelcodijkstra/jbtest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/eelcodijkstra/jbtest/issues/new?title=Issue%20on%20page%20%2F3_elm-list.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/jbtest/master?urlpath=tree/docs/3_elm-list.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lancering Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lijsten-creeren">
+   3.3.1 Lijsten creëren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-map-functie">
+   3.3.2 List.map functie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-filter">
+   3.3.3 List.filter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-foldl">
+   3.3.4 List.foldl
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uitdaging">
+     Uitdaging
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-foldr">
+   3.3.5 List.foldr
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mogelijke-challenge-binomium">
+     Mogelijke challenge: Binomium
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="intro-lists">
+<h1>3.3 Intro Lists<a class="headerlink" href="#intro-lists" title="Permalink to this headline">¶</a></h1>
+<p>Run de volgende cel:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1,2,3,4,5,6,7,8,9]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hee, hoe komt dat? Blijkbaar wordt er een ‘lijstje’ (<code class="docutils literal notranslate"><span class="pre">List</span></code>) van getallen opgebouwd.</p>
+<div class="section" id="lijsten-creeren">
+<h2>3.3.1 Lijsten creëren<a class="headerlink" href="#lijsten-creeren" title="Permalink to this headline">¶</a></h2>
+<p>Een andere manier om een List te creëren is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="mi">3</span> <span class="p">,</span> <span class="mi">5</span> <span class="p">,</span> <span class="mi">6</span> <span class="p">,</span> <span class="mi">8</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3,5,6,8] : List number
+</pre></div>
+</div>
+</div>
+</div>
+<p>ofwel het simpelweg opsommen wat er in moet komen.
+Voorbeeld met woorden/strings er in:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="s">&quot;abra&quot;</span> <span class="p">,</span> <span class="s">&quot;ca&quot;</span> <span class="p">,</span> <span class="s">&quot;dabra&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&quot;abra&quot;,&quot;ca&quot;,&quot;dabra&quot;] : List String
+</pre></div>
+</div>
+</div>
+</div>
+<p>Je ziet bij die 2 voorbeelden in het resultaat wat het type van de elementen is. Wat als we strings en ints mixen?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="s">&quot;abra&quot;</span> <span class="p">,</span> <span class="mi">5</span> <span class="p">,</span> <span class="s">&quot;dabra&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">-- TYPE MISMATCH ---------------------------------------------------------- REPL</span>
+
+The 2nd element of this list does not match all the previous elements:
+
+3|   [ &quot;abra&quot; , 5 , &quot;dabra&quot; ]
+                ^
+The 2nd element is a number of type:
+
+    <span class=" -Color -Color-Yellow">number</span>
+
+But all the previous elements in the list are:
+
+    <span class=" -Color -Color-Yellow">String</span>
+
+Hint: Everything in a list must be the same type of value. This way, we never
+run into unexpected values partway through a List.map, List.foldl, etc. Read
+&lt;https://elm-lang.org/0.19.1/custom-types&gt; to learn how to “mix” types.
+
+Hint: Try using String.fromInt to convert it to a string?
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zoals je ziet vereist Elm dat de elementen van een lijst van hetzelfde type zijn.</p>
+<p>Een bijzondere versie van het opsommen van de elementen is de lege List: een List zonder elementen. Dat doe je zo (eigenlijk ook op de ‘opsom-manier’, door 0 elementen op te sommen):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[] : List a
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dat lijkt misschien niet zo bijzonder maar een lege lijst is bij het werken met
+lijsten net zo belangrijk als de getallen 0 en 1 bij optellen en vermenigvuldigen.
+Ook kun je aan een bestaande List met behulp van :: een element toevoegen:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="mi">42</span> <span class="nf">::</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[42,1,2,3,4,5,6,7,8,9]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>en ook meerdere elementen toevoegen kan:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="mi">83</span> <span class="nf">::</span> <span class="mi">42</span> <span class="nf">::</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[83,42,1,2,3,4,5,6,7,8,9]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zoals je ziet zijn haakjes hier niet nodig. Op deze manier kun je een bestaande
+List verlengen.</p>
+<p>Om van een List het eerste element te krijgen bestaat de functie <code class="docutils literal notranslate"><span class="pre">head</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">head</span> <span class="p">(</span><span class="mi">83</span> <span class="nf">::</span> <span class="mi">42</span> <span class="nf">::</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Just 83 : Maybe Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>‘Maybe’? Ja, want misschien was de List wel leeg en dan wordt er geen Int teruggegeven. Maybe is het een goed idee zelf op internet nog wat informatie op te zoeken, gebruik bijvoorbeeld de keywords ‘elm lang List maybe’.</p>
+<p>Nog een voorbeeld van Head:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">head</span> <span class="p">([</span> <span class="s">&quot;abra&quot;</span> <span class="p">,</span> <span class="s">&quot;ca&quot;</span> <span class="p">,</span> <span class="s">&quot;dabra&quot;</span> <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Just &quot;abra&quot; : Maybe String
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ook is het mogelijk juist allesbehalve het eerste element op te vragen: de ‘tail’:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">tail</span> <span class="p">(</span><span class="mi">83</span> <span class="nf">::</span> <span class="mi">42</span> <span class="nf">::</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Just [42,1,2,3,4,5,6,7,8,9]
+    : Maybe (List Int)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">tail</span> <span class="p">([</span> <span class="s">&quot;abra&quot;</span> <span class="p">,</span> <span class="s">&quot;ca&quot;</span> <span class="p">,</span> <span class="s">&quot;dabra&quot;</span> <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Just [&quot;ca&quot;,&quot;dabra&quot;] : Maybe (List String)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Als je er even over nadenkt zie je wellicht dat een List in essentie 2 verschillende vormen kan hebben: het is óf een lege List óf het is een element (‘head’ genaamd) gevolgd door een List (die ook weer leeg kan zijn óf bestaat uit een head en een List (de tail, die ook weer leeg kan zijn óf … enzovoort)).</p>
+<p><strong>En tel er 2 bij op…</strong></p>
+<p>Het leuke van Lists is dat je er berekeningen op kunt gaan toepassen. Stel
+we willen bij elk getal in de List het getal 2 optellen. We mappen dan de
+functie telTweeOpBij op elk getal uit de List:
+Met mappen wordt bedoeld: Het toepassen van de functie op elk van de items in de lijst.
+(De functie telTweeOpBij hebben we eerder gezien, maar hier opnieuw):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">telTweeOpBij</span> <span class="nv">x</span> <span class="nf">=</span> <span class="nv">x</span> <span class="nf">+</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : number -&gt; number
+</pre></div>
+</div>
+</div>
+</div>
+<p>Deze functie kunnen we dus toepassen op elk element uit een List:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="nv">telTweeOpBij</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3,4,5,6,7,8,9,10,11]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>We hadden in plaats van telTweeOpBij ook kunnen schrijven</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">+</span> <span class="mi">2</span> <span class="p">)</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3,4,5,6,7,8,9,10,11]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>waarbij <code class="docutils literal notranslate"><span class="pre">\x</span> <span class="pre">-&gt;</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">2</span></code> een anonymous function is zoals we al eerder gezien hebben.</p>
+<p>Nu is:</p>
+<p>List.map ( \x -&gt; x + 2 ) (List.range 1 9)</p>
+<p>niet bepaald super-leesbaar. Je mag dit in Elm ook anders opschrijven: Neem (List.range
+1 9) en map op elk element de functie ( x -&gt; x + 2 ). Dit ziet er dan in de Elm Repl uit
+als:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">9</span><span class="p">)</span> <span class="nf">|&gt;</span>  <span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">+</span> <span class="mi">2</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3,4,5,6,7,8,9,10,11]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="list-map-functie">
+<h2>3.3.2 List.map functie<a class="headerlink" href="#list-map-functie" title="Permalink to this headline">¶</a></h2>
+<p>Met behulp van de map (List.map) kunnen we dus een functie toepassen op
+elk element van een List.</p>
+<p>List.map eenFunctie eenList</p>
+<p>De functie eenFunctie wordt toegepast op eenList en het resultaat is een List
+met evenveel elementen als eenList. Het i-de element van het resultaat is het
+resutaat van toepassing van functie eenFunctie op de list eenList.
+Stel ik wil alle kwadraten van de getallen 1 tot en met 30:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">*</span> <span class="nv">x</span> <span class="p">)</span> <span class="p">(</span> <span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">30</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1,4,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400,441,484,529,576,625,676,729,784,841,900]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="list-filter">
+<h2>3.3.3 List.filter<a class="headerlink" href="#list-filter" title="Permalink to this headline">¶</a></h2>
+<p>De filter-functie (voluit: ’List.filter’) neemt als input een list en de output is
+een lijst met (alleen die) elementen uit de input die aan een voorwaarde voldoen.
+De voorwaarde wordt gesteld door een andere functie die (losgelaten
+op een element van de list) true of false teruggeeft.</p>
+<p>Zo geeft de functie <code class="docutils literal notranslate"><span class="pre">\x</span> <span class="pre">-&gt;</span> <span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">5</span></code> als resultaat <code class="docutils literal notranslate"><span class="pre">true</span></code> als de input groter is dan 5 en anders
+<code class="docutils literal notranslate"><span class="pre">false</span></code>. Kijken we naar:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">filter</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">&gt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+    : List Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>dan wordt er dus een list opgebouwd uit die elementen uit de range 1 tot en
+met 30 die groter zijn dan 5.</p>
+<p>** Een uitdaging: Even, Oneven en Deling**</p>
+<p>Een voorbeeld: stel we willen alle oneven getallen van 1 tot 1000 opsommen. Een manier om dit te doen is de <code class="docutils literal notranslate"><span class="pre">list</span></code> te nemen van getallen van 1 tot 1000 en dan te filteren of een getal even of oneven is.
+Om te kijken of een getal even of oneven is delen we het door 2 (deling van gehele getallen, dat wil zeggen geen komma-getallen).</p>
+<p>In de informatica bestaan er 2 soorten deling: de <code class="docutils literal notranslate"><span class="pre">gewone</span> <span class="pre">deling</span></code> zoals je deze meestal tegenkomt (met breuken of kommagetallen; alsof je pizza’s verdeelt) en de <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">deling</span></code> (alleen gehele getallen; alsof je snoepjes verdeelt):</p>
+<p>Als je 13 pizza’s verdeelt over 3 mensen (zullen wel kleine pizzaatjes zijn…) krijgt ieder 4 (hele) pizza’s en ook nog 1/3 pizza. In Elm heet dit een <code class="docutils literal notranslate"><span class="pre">floating</span> <span class="pre">point</span> <span class="pre">division</span></code> en je gebruikt er de deelstreep <code class="docutils literal notranslate"><span class="pre">/</span></code> voor: <code class="docutils literal notranslate"><span class="pre">13</span> <span class="pre">/</span> <span class="pre">3</span></code>.</p>
+<p>Als je daarentegen 13 snoepjes hebt en ze over 3 mensen eerlijk verdeelt krijgt ieder 4 snoepjes en heb je als het goed is nog 1 snoepje over (de <code class="docutils literal notranslate"><span class="pre">rest</span></code>, ook wel <code class="docutils literal notranslate"><span class="pre">modulo</span></code> genoemd). In Elm heet dit een <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">division</span></code>. Hoeveel snoepjes elk heeft kun je berekenen met <code class="docutils literal notranslate"><span class="pre">13</span> <span class="pre">//</span> <span class="pre">3</span></code> en hoeveel snoepjes er overblijven bereken je met <code class="docutils literal notranslate"><span class="pre">modBy</span> <span class="pre">13</span> <span class="pre">3</span></code>.</p>
+<p>Om te weten of een getal <code class="docutils literal notranslate"><span class="pre">even</span></code> is (deelbaar door <code class="docutils literal notranslate"><span class="pre">2</span></code>) of <code class="docutils literal notranslate"><span class="pre">oneven</span></code> is kun je een <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">deling</span></code> door <code class="docutils literal notranslate"><span class="pre">2</span></code> doen en kijken of er <code class="docutils literal notranslate"><span class="pre">0</span></code> uitkomt, in <code class="docutils literal notranslate"><span class="pre">elm</span></code>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">\x</span> <span class="pre">-&gt;</span> <span class="pre">(</span> <span class="pre">modBy</span> <span class="pre">x</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span> <span class="pre">)</span></code></p>
+<p>Als we deze functie toepassen op een oneven getal moet er <code class="docutils literal notranslate"><span class="pre">False</span></code> uitkomen en anders <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span> <span class="nv">modBy</span> <span class="nv">x</span> <span class="mi">2</span> <span class="nf">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">)</span> <span class="mi">15</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False : Bool
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span> <span class="nv">modBy</span> <span class="nv">x</span> <span class="mi">2</span> <span class="nf">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">)</span> <span class="mi">14</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False : Bool
+</pre></div>
+</div>
+</div>
+</div>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>Voor het uitproberen van dit stukje code is dit een prima manier om te noteren, maar voor de leesbaarheid (en dus onderhoudbaarheid) van een programma is het goed er een duidelijke naam aan te geven (dus in plaats van de <code class="docutils literal notranslate"><span class="pre">anonymous</span> <span class="pre">functie</span></code> gaan we nu een <code class="docutils literal notranslate"><span class="pre">named</span> <span class="pre">function</span></code> programmeren):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">isEven</span> <span class="nv">x</span> <span class="nf">=</span> <span class="nv">modBy</span> <span class="nv">x</span> <span class="mi">2</span> <span class="nf">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : Int -&gt; Bool
+</pre></div>
+</div>
+</div>
+</div>
+<p>Waarna we het wat cryptische <code class="docutils literal notranslate"><span class="pre">(\x</span> <span class="pre">-&gt;</span> <span class="pre">(</span> <span class="pre">modBy</span> <span class="pre">x</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span> <span class="pre">))</span> <span class="pre">15</span></code> van hierboven kunnen versimpelen tot:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">isEven</span> <span class="mi">15</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False : Bool
+</pre></div>
+</div>
+</div>
+</div>
+<p>Om het helemaal af te maken definiëren we ook nog een function om te kijken of een getal <code class="docutils literal notranslate"><span class="pre">oneven</span></code> (<code class="docutils literal notranslate"><span class="pre">odd</span></code> in het Engels) is. Er zijn 2 voor de hand liggende manieren: je zou bijvoorbeeld kunnen kijken of een integer deling door 2 juist 1 oplevert, dus iets als <code class="docutils literal notranslate"><span class="pre">isOdd</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">(</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">1</span> <span class="pre">)</span></code>, maar eleganter is misschien wel door <code class="docutils literal notranslate"><span class="pre">function</span></code> <code class="docutils literal notranslate"><span class="pre">isOdd</span></code> te definiëren als:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">isOdd</span> <span class="nv">x</span> <span class="nf">=</span> <span class="nv">not</span> <span class="p">(</span> <span class="nv">isEven</span> <span class="nv">x</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : Int -&gt; Bool
+</pre></div>
+</div>
+</div>
+</div>
+<p>ofwel: kijk of het getal <code class="docutils literal notranslate"><span class="pre">even</span></code> is en zet er <code class="docutils literal notranslate"><span class="pre">not</span></code> voor (<code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">True</span></code> geeft <code class="docutils literal notranslate"><span class="pre">False</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">False</span></code> geeft <code class="docutils literal notranslate"><span class="pre">True</span></code>).</p>
+<p>Kijk of 15 een oneven getal is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">isOdd</span> <span class="mi">15</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True : Bool
+</pre></div>
+</div>
+</div>
+</div>
+<p>en 42?
+en 83?
+Komt eruit wat je verwacht?</p>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>Terug naar de uitdaging: We wilden alle oneven getallen van 1 tot 1000 opsommen. We laten nu alle getallen van 1 tot 1000 opsommen en gebruiken dan <code class="docutils literal notranslate"><span class="pre">List.filter</span></code> om de even getallen er uit te filteren zodat alleen de oneven getallen overblijven:</p>
+<p>List.filter isOdd ( List.range 1 1000 )</p>
+<p><strong>Probeer zelf:</strong></p>
+<p>Hoe krijg ik met behulp van List.map en/of List.filter van de getallen van 1
+tot en met 60 die kwadraten die groter zijn dan 28?</p>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-foldl">
+<h2>3.3.4 List.foldl<a class="headerlink" href="#list-foldl" title="Permalink to this headline">¶</a></h2>
+<p>Na de map en filter, die vrij intuïtief zijn als je ze een keer gezien hebt, komen
+we bij de ’fold’. Deze komt voor als ’foldl’ en ’foldr’, misschien kun je al vermoeden
+waar ’l’ en ’r’ voor staan?</p>
+<p>We beginnen met een voorbeeld: Stel we willen weten hoeveel de getallen
+van 1 tot en met 100 bij elkaar opgeteld zijn, dus</p>
+<p>1 + 2 + 3 + 4 + 5 + … + 99 + 100</p>
+<p>Denk hier eerst een minuutje over na voor je verder leest. Als je wilt kun je het hier uitproberen:</p>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>We hebben al gezien dat we met (List.range 1 100) (een list met) de
+getallen 1 tot en met 100 krijgen. Hoe krijgen we alle elementen uit de list
+opgeteld? We doorlopen de lijst: elk element wordt bij het tussenresultaat
+opgeteld. Dit lijkt wat op map, omdat op elk element van de list een berekening
+wordt uitgevoerd, echter wordt de uitvoer/resultaat van de ene berekening gebruikt als invoer voor de volgende berekening.
+Die berekening wordt geformuleerd als een functie:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span><span class="nf">+</span><span class="nv">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : number -&gt; number -&gt; number
+</pre></div>
+</div>
+</div>
+</div>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>Aj, dat ziet er lastig uit…!? Valt mee als we het stapje voor stapje bekijken.
+Het is een functie die als input een ’x’ verwacht. Dat is het element van de
+list. Bij de eerste aanroep is dat dus 1, 2e aanroep een 2, 3e aanroep een 3 en
+zo door. Deze functie geeft een andere functie terug:</p>
+<p>( \y -&gt; x+y )</p>
+<p>een functie die een ’y’ ontvangt (het tussenresultaat, de optelling tot nu
+toe) en een nieuw tussenresultaat berekent: in dit geval door bij het vorige
+tussenresultaat de waarde van het huidige list-element op te tellen. Elm
+zorgt ervoor dat het nieuwe tussenresultaat bij het volgende list-element
+gebruikt wordt zodat we op het einde van de list alle elementen opgeteld
+hebben!</p>
+<p>We zijn er bijna! We moeten namelijk nog aangeven dat we bij het eerste
+element willen beginnen met tussenresultaat 0!</p>
+<p>Als we dit samenvoegen krijgen we:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">foldl</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">+</span> <span class="nv">y</span> <span class="p">))</span> <span class="mi">0</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5050 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>Je ziet dat ’foldl’ als eerste parameter de ’berekeningsfunctie’ ontvangt, als
+tweede de initiële waarde en tot slot de list waarop de berekening moet worden
+toegepast.</p>
+<p>We kunnen een functie ’telAllesOp’ definiëren die een list accepteert en alle
+waarden optelt:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">telAllesOp</span> <span class="nf">=</span> <span class="kt">List</span><span class="nf">.</span><span class="nv">foldl</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">+</span> <span class="nv">y</span> <span class="p">))</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List number -&gt; number
+</pre></div>
+</div>
+</div>
+</div>
+<p>Het is daarna mogelijk om van een list alle elementen op te tellen met</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">telAllesOp</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span><span class="mi">512</span><span class="p">,</span><span class="mi">4096</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4650 : number
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="uitdaging">
+<h3>Uitdaging<a class="headerlink" href="#uitdaging" title="Permalink to this headline">¶</a></h3>
+<p>Definieer nu zelf aan de hand van het voorafgaande met behulp van folding
+een functie die alle elementen van een list kwadrateert en die kwadraten dan bij elkaar optelt. Test deze met de
+korte lijsten [3,4] en [5,12] (doen die je ergens aan denken? misschien als
+je goed naar de resultaten kijkt: 25 en 169).</p>
+<p>Definieer hier je functie:</p>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>en test deze met [3,4] en [5,12]:</p>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="list-foldr">
+<h2>3.3.5 List.foldr<a class="headerlink" href="#list-foldr" title="Permalink to this headline">¶</a></h2>
+<p>Je had wellicht al bedacht dat ’l’ en ’r’ voor links en rechts staan. Als je het in
+eerdergebruikt voorbeeld ’foldl’ vervangt door ’foldr’:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">foldr</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">+</span> <span class="nv">y</span> <span class="p">))</span> <span class="mi">0</span> <span class="p">(</span><span class="kt">List</span><span class="nf">.</span><span class="nv">range</span> <span class="mi">1</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5050 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>Krijg je dan een ander resultaat? Snap je waarom?</p>
+<p>Vergelijk ook de twee regels:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">foldr</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">++</span> <span class="nv">y</span> <span class="p">))</span> <span class="s">&quot;X&quot;</span> <span class="p">[</span> <span class="s">&quot;a&quot;</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">,</span> <span class="s">&quot;c&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;abcX&quot; : String
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kt">List</span><span class="nf">.</span><span class="nv">foldl</span> <span class="p">(</span> <span class="nf">\</span><span class="nv">x</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="nf">\</span><span class="nv">y</span> <span class="nf">-&gt;</span> <span class="nv">x</span> <span class="nf">++</span> <span class="nv">y</span> <span class="p">))</span> <span class="s">&quot;X&quot;</span> <span class="p">[</span> <span class="s">&quot;a&quot;</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">,</span> <span class="s">&quot;c&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;cbaX&quot; : String
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hier is het verschil heel duidelijk te zien.</p>
+<div class="section" id="mogelijke-challenge-binomium">
+<h3>Mogelijke challenge: Binomium<a class="headerlink" href="#mogelijke-challenge-binomium" title="Permalink to this headline">¶</a></h3>
+<p>Misschien heb je wel eens gehoord van het binomium van Newton:</p>
+<p><img alt="binomium" src="_images/binomium.png" /></p>
+<p>Het begint met het getal 1, daaronder komen rijen met steeds
+links én rechts een 1. De andere getallen zijn steeds de 2 getallen er schuin
+boven opgeteld. Misschien heb je wel eens een knikkerbaan gezien met spijkertjes
+hetzelfde patroon:</p>
+<p>Het getal dat in het binomium staat is gelijk aan het aantal ’wegen’ dat naar
+een spijkertje leidt: een knikker die er van bovenaf in rolt kan steeds links
+of rechts af. Het is bijvoorbeeld op 4 manieren mogelijk om bij een plek te
+komen waar een 4 staat.</p>
+<p>Van <em>aantal wegen</em> is het een redelijk kleine stap naar de ‘kans’ dat de knikker
+op een bepaalde plek terecht komt. De getallen komen op veel plekken terug.</p>
+<p>Het is best wel een challenge/uitdaging om een functie te schrijven die de i-de regel van het binomium oplevert!</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "elmreplkernel"
+        },
+        kernelOptions: {
+            kernelName: "elmreplkernel",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'elmreplkernel'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="opdracht-demo.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Opdracht-demo</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="microbit-1b.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Microbit les 1b</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          Door Eelco Dijkstra (i&i)<br/>
+        
+            &copy; auteursrechten 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

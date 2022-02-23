@@ -9,6 +9,7 @@ parts:
   chapters:
   - file: mchoice-demo
   - file: opdracht-demo
+  - file: 3_elm-list
   - file: microbit-1b  
   - file: sphinx-vb
   - file: uitwerkingen
