@@ -280,11 +280,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/eelcodijkstra/jbtest"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/eelcodijkstra/jbdemo"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/eelcodijkstra/jbtest/issues/new?title=Issue%20on%20page%20%2Fjb-infrastructuur.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/eelcodijkstra/jbdemo/issues/new?title=Issue%20on%20page%20%2Fjb-infrastructuur.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
         
@@ -305,7 +305,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/jbtest/master?urlpath=tree/docs/jb-infrastructuur.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/jbdemo/master?urlpath=tree/docs/jb-infrastructuur.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Lancering Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -322,6 +322,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-notebook-en-jupyter-lab">
+   Jupyter Notebook en Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-hub">
+   Jupyter Hub
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -336,13 +354,22 @@
 <blockquote>
 <div><p>We willen het auteurs en docenten hiermee zo gemakkelijk mogelijk maken: ze hoeven hiervoor niets op hun eigen computer te installeren.</p>
 </div></blockquote>
-<p>Deze bestaat uit de volgende onderdelen:</p>
+<p>Deze onlinen omgeving bestaat uit de volgende onderdelen:</p>
 <ul class="simple">
-<li><p>een JupyterLab omgeving (Jupyter Hub)</p></li>
+<li><p>een Jupyter Notebook cq. JupyterLab omgeving (via Jupyter Hub)</p></li>
 <li><p>een lokale server, voor het controleren van het materiaal in online publicatie-vorm</p></li>
 <li><p>verbonden met GitHub, voor het publiceren van het materiaal</p></li>
 </ul>
-<p>Auteurs en docenten moeten enige kennis hebben van deze bouwstenen: Jupyter, Jupyter Book (Markdown, MyST voor opmaak), en GitHub (en git-versiebeheer). (Cursus? Handleidingen?)</p>
+<p>Auteurs en docenten moeten enige kennis hebben van deze bouwstenen: Jupyter, Jupyter Book (Markdown, MyST voor opmaak), en GitHub (en git-versiebeheer). GitHub account is noodzakelijk. (Cursus? Handleidingen?)</p>
+<div class="section" id="jupyter-notebook-en-jupyter-lab">
+<h2>Jupyter Notebook en Jupyter Lab<a class="headerlink" href="#jupyter-notebook-en-jupyter-lab" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Notebook is de UI voor een enkel notebook. Met de Jupyter Lab UI kun je een reeks notebooks (en andere bestanden) beheren.</p>
+</div>
+<div class="section" id="jupyter-hub">
+<h2>Jupyter Hub<a class="headerlink" href="#jupyter-hub" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Hub is een multi-user server voor Jupyter Notebook en Jupyter Lab.</p>
+<p>Voor de normale gebruikers is dit een gewone Jupyter omgeving. admin-gebruikers kunnen een aantal zaken voor de andere gebruikers beheren.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

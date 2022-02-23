@@ -18,7 +18,7 @@ In het vijfde deel geven we een aantal overwegingen die tot de keuze voor dit pl
 
 {ref}`Voorbeelden <toetsvragen_demo>`
 ^^^
-keuzethema's lesmateriaal vormgegeven met Jupyter Book.
+Voorbeelden o.a. uit keuzethema's lesmateriaal vormgegeven met Jupyter Book.
 +++
 Panel footer 1
 ---
