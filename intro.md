@@ -19,15 +19,11 @@ In het vijfde deel geven we een aantal overwegingen die tot de keuze voor dit pl
 {ref}`Voorbeelden <toetsvragen_demo>`
 ^^^
 Voorbeelden o.a. uit keuzethema's lesmateriaal vormgegeven met Jupyter Book.
-+++
-Panel footer 1
 ---
 
 Jupyter Notebook
 ^^^
 Een notebook combineert opgemaakte tekst met code-cellen die de lezer kan uitvoeren en aanpassen.
-+++
-Panel footer 2
 ````
 
 ````{panels}
@@ -35,15 +31,11 @@ Panel footer 2
 {ref}`Jupyter Book <jupyter_book>`
 ^^^
 Jupyter Book combineert een aantal notebooks tot een boek. MyST Markdown geeft extra mogelijkheden voor de opmaak.
-+++
-Panel footer 3
 ---
 
 {ref}`Auteursomgeving <jb_infrastructuur>`
 ^^^
 De infrastructuur en hulpmiddelen om van een reeks Notebooks een gepubliceerd Jupyter Book te maken.
-+++
-Panel footer 4
 ````
 
 Een Jupyter Book is een "boek" gemaakt uit een reeks Jupyter notebooks.
