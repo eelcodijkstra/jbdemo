@@ -9,6 +9,7 @@ parts:
   chapters:
   - file: mchoice-demo
   - file: opdracht-demo
+  - file: sqlite-2
   - file: 3_elm-list
   - file: microbit-1b  
   - file: sphinx-vb
