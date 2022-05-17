@@ -1,7 +1,5 @@
 # Welkom bij de Jupyter Book demo
 
-
-
 Voor het lesmateriaal van de Informatica keuzethema's willen we gebruik maken van Jupyter en Jupyter Book.
 Het eerste gedeelte bevat een aantal  voorbeelden hoe het resultaat eruit zou kunnen zien.
 Voor de meeste gebruikers (docenten) is dit een handige eerste stap.
@@ -36,6 +34,19 @@ Jupyter Book combineert een aantal notebooks tot een boek. MyST Markdown geeft e
 {ref}`Auteursomgeving <jb_infrastructuur>`
 ^^^
 De infrastructuur en hulpmiddelen om van een reeks Notebooks een gepubliceerd Jupyter Book te maken.
+````
+
+````{panels}
+
+{ref}`Oefeningen<sphinx-exercise>`
+^^^
+Het de oefeningen-extensie kun je opdrachten formuleren en de uitwerkingen beschrijven.
+---
+
+{ref}`Toetsvragen<sphinx-assessment>`
+^^^
+Met de toetsvragen-extensie kun je allerlei soorten toetsvragen formuleren,
+bijvoorbeeld multiple choice, drag-&-drop, Parsons, fill-in-the-blank.
 ````
 
 Een Jupyter Book is een "boek" gemaakt uit een reeks Jupyter notebooks.

@@ -22,6 +22,8 @@ parts:
   chapters:
   - file: notebooks  
   - file: markdown
+  - file: exercise
+  - file: assessment
 
 - caption: Infrastructuur
   chapters:

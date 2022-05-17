@@ -31,16 +31,16 @@ html:
   use_issues_button: true
   use_repository_button: true
   
+launch_buttons:
+  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
+  thebe: true
+  
 sphinx:
   extra_extensions:
     - sphinx_exercise 
   local_extensions:
-    helloworld: ./ext
     todo: ./ext
-    mchoice: ./ext
-    dragndrop: ./ext
-    fitb: ./ext
-    parsons: ./ext
+    sphinx_assessment: ./ext/sphinx-assessment
   config:
     todo_include_todos: true
 
