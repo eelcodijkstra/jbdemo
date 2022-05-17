@@ -4,5 +4,6 @@ _build/.doctrees/*
 ext/.ipynb_checkpoints/*
 ext/__pycache__/*
 ext/sphinx-exercise
+ext/sphinx-assessment/sphinx_assessment/__pycache__/*
 _build/*
 
