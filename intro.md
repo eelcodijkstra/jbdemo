@@ -8,9 +8,9 @@ i&i heeft een auteursomgeving opgezet om dit gemakkelijk(er) te maken voor auteu
 
 ````{panels}
 
-{ref}`Voorbeelden <toetsvragen_demo>`
+{ref}`Voorbeelden <voorbeeld-paginas>`
 ^^^
-Voorbeelden o.a. uit keuzethema's lesmateriaal vormgegeven met Jupyter Book.
+Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
 ---
 
 Jupyter Notebook
