@@ -6,4 +6,5 @@ ext/__pycache__/*
 ext/sphinx-exercise
 ext/sphinx-assessment/sphinx_assessment/__pycache__/*
 _build/*
+binder/.ipynb_checkpoints/*
 
