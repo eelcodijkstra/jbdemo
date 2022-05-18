@@ -1,16 +1,10 @@
 # Welkom bij de Jupyter Book demo
 
-Voor het lesmateriaal van de Informatica keuzethema's willen we gebruik maken van Jupyter en Jupyter Book.
-Het eerste gedeelte bevat een aantal  voorbeelden hoe het resultaat eruit zou kunnen zien.
-Voor de meeste gebruikers (docenten) is dit een handige eerste stap.
+Waar mogelijk en zinvol gebruiken we voor het lesmateriaal van de Informatica keuzethema's Jupyter Notebooks en Jupyter Book.
+Dit Jupyter Book demonstreert hoe het resultaat eruit kan zien, en hoe je daar als gebruiker mee om kunt gaan.
 
-Het tweede gedeelte gaat over Jupyter Notebook. Een Jupyter Book bestaat uit een verzameling Jupyter Notebooks: in het algemeen, een notebook per web-pagina. Een notebook bevat vaak een combinatie van tekst en code, bijvoorbeeld in Python. Als lezer (leerling) kun je het notebook van een pagina activeren om interactief met de code-inhoud aan de slag te gaan. Dit is relevant voor alle docenten en leerlingen.
-
-Het derde deel bevat een inleiding in Jupyter Book: welke mogelijkheden heb je om het materiaal vorm te geven? Dit is van belang voor auteurs en voor docenten die het materiaal willen aanpassen - bijvoorbeeld om een eigen versie voor hun leerlingen te maken.
-
-Het vierde deel bevat een overzicht van de auteursomgeving: de verschillende interfaces en hulpmiddelen om van Jupyter Notebooks tot een gepubliceerd Jupyter Book te komen.
-
-In het vijfde deel geven we een aantal overwegingen die tot de keuze voor dit platform geleid hebben. Ook geven we aan welke ontwikkelingen we in de toekomst nog verwachten.
+Daarnaast bevat dit boek een uitleg over de infrastructuur voor het maken of aanpassen van lesmateriaal in deze vorm.
+i&i heeft een auteursomgeving opgezet om dit gemakkelijk(er) te maken voor auteurs en docenten.
 
 ````{panels}
 
@@ -110,17 +104,3 @@ VB-FIG
 Deze code kan steeds in de context van het Jupyter Notebook uitgevoerd en getest worden. De directe feedback helpt daarbij om misverstanden vroegtijdig te signaleren.
 
 In Jupyter Book kunnen we deze elementen ook nog combineren met interactieve toetsvragen, bijvoorbeeld Multiple Choice vragen, invulvragen, of "Parsons' puzzles" voor programmeren.
-
-VB-FIG
-
-:::{note}
-...note...
-:::
-
-And here is a code block:
-
-```
-e = mc^2
-```
-
-Check out the content pages bundled with this sample book to see more.
