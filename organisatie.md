@@ -24,25 +24,3 @@ Gesuggereerde aanpak:
     * en hebben per branch daarnaast extra bestanden,
     * met per branch een eigen toc (table of contents)
 
-## Diagram-voorbeelden
-
-:::{graphviz}
-:name: hello
-:align: center
-:caption: figuur
-
-digraph G {Hello->World}
-:::
-
-:::{graphviz}
-:align: center
-:caption: diagram
-
-digraph G {
-  rankdir=LR
-  node [shape=box, color=blue]
-  knoop1 [style=filled, fillcolor=lightblue] 
-  knoop2 [style=filled, fillcolor=lightyellow] 
-  start -> knoop1 -> knoop2
-}
-:::
