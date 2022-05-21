@@ -30,6 +30,7 @@ parts:
 - caption: Infrastructuur
   chapters:
   - file: jb-infrastructuur
+  - file: organisatie
   
 - caption: Rest
   chapters:

@@ -37,14 +37,17 @@ launch_buttons:
   
 sphinx:
   extra_extensions:
-    - sphinx_exercise 
+    - sphinx_exercise
+    - sphinx.ext.graphviz
   local_extensions:
     todo: ./ext
     sphinx_assessment: ./ext/sphinx-assessment
   config:
+    language: nl  
     todo_include_todos: true
     numfig_format:
       exercise: "Opdracht %s"
       assessment: "Vraag %s"
+    graphviz_output_format: "svg"
 
 exclude_patterns: [ext/*,_build, Thumbs.db, .DS_Store, ".ipynb_checkpoints/*", "**.ipynb_checkpoints"]
