@@ -36,5 +36,4 @@ parts:
   chapters:
   - file: over-dit-boek
   - file: todos
-  - file: testjb
   - file: todolist
