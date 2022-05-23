@@ -11,6 +11,10 @@ i&i heeft een auteursomgeving opgezet om dit gemakkelijk(er) te maken voor auteu
 {ref}`Voorbeelden <voorbeeld-paginas>`
 ^^^
 Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
+
+* {ref}`Functioneel programmeren: Elm voorbeeld <Elm-voorbeeld>`
+* {ref}`Physical computing: microbit opdracht <microbit-1b>`
+* {ref}`Databases: SQL join <sqlite-2>`
 ---
 
 Jupyter Notebook

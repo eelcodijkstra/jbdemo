@@ -6,33 +6,44 @@ root: intro
 
 parts:
 - caption: Voorbeelden
+  numbered: true
   chapters:
-  - file: voorbeelden
-  - file: sqlite-2
-  - file: 3_elm-list
-  - file: microbit-1b  
-  - file: sphinx-vb
-  - file: mchoice-demo
-  - file: opdracht-demo  
-  - file: uitwerkingen
+  - file: voorbeelden/voorbeelden
+    sections:
+    - file: voorbeelden/3_elm-list
+    - file: voorbeelden/microbit-1b
+    - file: voorbeelden/sqlite-2    
+  - file: voorbeelden/overige
+    sections:
+    - file: voorbeelden/sphinx-vb
+    - file: voorbeelden/mchoice-demo
+    - file: voorbeelden/opdracht-demo  
+    - file: voorbeelden/uitwerkingen
   
 - caption: Jupyter Notebook
+  numbered: true
   chapters:
   - file: jupyter-notebook
   
 - caption: Jupyter Book
+  numbered: true
   chapters:
   - file: notebooks  
   - file: markdown
-  - file: exercise
-  - file: assessment
+  - file: sphinx-extensions/sphinx-extensions  
+    sections:
+    - file: sphinx-extensions/sphinx-exercise
+    - file: sphinx-extensions/sphinx-assessment
+    - file: sphinx-extensions/assessment  
+    - file: sphinx-extensions/sphinx-graphviz
+    - file: sphinx-extensions/sphinx-todo  
 
 - caption: Infrastructuur
+  numbered: true
   chapters:
   - file: jb-infrastructuur
   - file: organisatie
-  - file: extensions
-  
+
 - caption: Rest
   chapters:
   - file: over-dit-boek

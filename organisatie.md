@@ -24,3 +24,55 @@ Gesuggereerde aanpak:
     * en hebben per branch daarnaast extra bestanden,
     * met per branch een eigen toc (table of contents)
 
+## Enkele opmerkingen
+
+We gebruiken meestal de volgende structuur, net als in dit boek:
+
+```
+format: jb-book
+root: intro
+
+parts:
+- caption: Voorbeelden
+  chapters:
+  - file: voorbeelden
+  - file: sqlite-2
+  
+- caption: Jupyter Notebook
+  chapters:
+  - file: jupyter-notebook
+  
+- caption: Jupyter Book
+  chapters:
+  - file: notebooks  
+  - file: markdown
+  - file: exercise
+  - file: assessment
+
+- caption: Infrastructuur
+  chapters:
+  - file: jb-infrastructuur
+  - file: organisatie
+  - file: extensions
+    sections:
+    - file: sphinx-assessment
+    - file: sphinx-exercise
+    - file: graphviz
+  
+- caption: Rest
+  chapters:
+  - file: over-dit-boek
+  - file: todos
+  - file: todolist
+
+
+
+```
+
+Een boek bestaat in dit geval uit *parts*; elk part heeft een aantal *chapters*; en elk chapter kan weer uit een aantal *sections* bestaan.
+
+* (dat laatste zien we nog niet in dit voorbeeld...)
+
+Zie voor meer uitleg over de table-of-contents structuur: https://jupyterbook.org/customize/toc.html
+
+* meestal gebruiken we per hoofdstuk een inleiding, en losse files met de verschillende secties. In dat geval mag de inleiding geen extra kopjes gebruiken, alleen de hoofdstuk-titel. Je kunt bijv. gebruik maken van "rubric" als "titel".
