@@ -43,6 +43,7 @@ parts:
   chapters:
   - file: jb-infrastructuur
   - file: organisatie
+  - file: verantwoording
 
 - caption: Rest
   chapters:
