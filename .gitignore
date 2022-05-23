@@ -7,4 +7,5 @@ ext/sphinx-exercise
 ext/sphinx-assessment
 _build/*
 binder/.ipynb_checkpoints/*
-
+voorbeelden/.ipynb_checkpoints/*
+sphinx-extensions/.ipynb_checkpoints/*
