@@ -31,6 +31,8 @@ Hoewel dit meestal web-documenten zijn (html), maakt Sphinx het ook mogelijk om 
 
 Jupyter Book is een onderdeel van het "executable books" project, waarmee boeken met interactieve code gepubliceerd kunnen worden.
 
+Zowel Sphinx en Jupyter Book zijn open source projecten, met een grote en levendige community.
+
 :::{graphviz}
 :align: center
 digraph G {
@@ -50,3 +52,16 @@ digraph G {
   sphinx -> PDF
 }
 :::
+
+## GitHub
+
+Voor versiebeheer is in de informatica "git" eigenlijk de standaard.
+GitHub is een van de belangrijkste infrastructuren voor open-source software.
+Bovendien is GitHub, door het gebruik van de website en van GitHub Desktop, vrij gemakkelijk te gebruiken (ten opzichte van git op de command line).
+Een aantal informatica-docenten gebruikt GitHub in de klas, bijvoorbeeld via GitHub Classroom (https://classroom.github.com).
+Kennis van git en van GitHub is voor informatica-docenten eigenlijk een "must"; dan ligt het gebruik daarvan in de keuzethemas-infrastructuur voor de hand.
+
+> GitHub voldoet niet aan de eis van "open source": GitHub is tegenwoordig onderdeel van Microsoft. Gezien het belang van GitHub voor de open source community is dit geen probleem voor de continuïteit.
+
+Een belangrijk aspect van *git* is dat er geen fundamenteel onderscheid is tussen het origineel van een repository en een "clone" daarvan. Elke clone of fork bevat een complete kopie van het origineel, met de volledige historie daarvan. (In het proces maak je wel onderscheid tussen het origineel en een kopie, maar dat is puur voor het proces.)
+

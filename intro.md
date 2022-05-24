@@ -1,10 +1,7 @@
 # Welkom bij de Jupyter Book demo
 
-Waar mogelijk en zinvol gebruiken we voor het lesmateriaal van de Informatica keuzethema's Jupyter Notebooks en Jupyter Book.
-Dit Jupyter Book demonstreert hoe het resultaat eruit kan zien, en hoe je daar als gebruiker mee om kunt gaan.
-
-Daarnaast bevat dit boek een uitleg over de infrastructuur voor het maken of aanpassen van lesmateriaal in deze vorm.
-i&i heeft een auteursomgeving opgezet om dit gemakkelijk(er) te maken voor auteurs en docenten.
+Dit *Jupyter Book* bevat een demonstratie en uitleg van het gebruik van Jupyter Notebooks en Jupyter Book voor het publiceren van het informatica *keuzethema's* materiaal.
+Daarnaast beschrijft dit boek de infrastructuur die i&i opgezet heeft voor docenten/auteurs.
 
 ````{panels}
 

@@ -28,8 +28,9 @@ parts:
 - caption: Jupyter Book
   numbered: true
   chapters:
+  - file: jupyterbook
+  - file: markdown  
   - file: notebooks  
-  - file: markdown
   - file: sphinx-extensions/sphinx-extensions  
     sections:
     - file: sphinx-extensions/sphinx-exercise
@@ -44,6 +45,7 @@ parts:
   - file: jb-infrastructuur
   - file: organisatie
   - file: verantwoording
+  - file: workflows
 
 - caption: Rest
   chapters:
