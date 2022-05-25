@@ -12,6 +12,8 @@ Belangrijke argumenten voor de keuze's zijn:
     * die up-to-date blijft met het origineel; en
     * waaruit bijdragen aan het origineel mogelijk zijn.
 * versiebeheer: 
+* het gebruik van "platte tekst" waar mogelijk en zinvol
+    * dit geeft de meeste mogelijkheden voor automatische verwerking, incl. versiebeheer
 
 ## Jupyter Notebook
 

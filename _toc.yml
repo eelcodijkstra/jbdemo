@@ -46,6 +46,7 @@ parts:
   - file: organisatie
   - file: verantwoording
   - file: workflows
+  - file: kennismaking
 
 - caption: Rest
   chapters:

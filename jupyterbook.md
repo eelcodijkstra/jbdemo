@@ -29,6 +29,10 @@ digraph G {
 
 ## MyST Markdown
 
+In een MySt Notebook kun je de Sphinx extensions gebruiken, zoals sphinx-exercises en sphinx-assessment.
+
+Als je extra metadata toevoegt dan kun je ook "executable code cells" gebruiken die uitgevoerd worden als in een Jupyter Notebook. Dit heb je alleen nodig als je interactieve cellen op je pagina wilt hebben.
+
 ## Jupyter Notebook
 
 

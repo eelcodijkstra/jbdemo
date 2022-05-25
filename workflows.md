@@ -109,3 +109,34 @@ Een branch een geschiedenis van *commits*: elke commit bestaat uit een reeks wij
 figuur: historie van een verzameling bestanden in git.
 
 (We kunnen hiervan zelf een voorbeeld maken, op basis van de oefeningen van GitHub. Of, in het kader van onze eigen flow. Zie in GitHub: insights/network
+
+:::{graphviz}
+:align: center
+
+digraph {
+    rankdir=TB
+    node [shape=box, fontname="Gill Sans"]
+    edge [fontname="Gill Sans"]
+    ghk [label="GitHub\nkeuzethemas"]
+    ghk -> ghh [label=" fork    "]
+    ghh -> ghk [label="  pull request*"]
+    ghh -> ghh [label="  create branch"]
+    ghh [label="GitHub\nhans"]   
+    jhh [label="Jupyter Hub\nhans"]
+    ghh -> jhh [label="clone/fetch*  "  ]
+    jhh -> jhh [label="  commit"]
+    jhh -> ghh [label="  push*"]
+}
+:::
+
+De manier van werken is als volgt:
+
+1. (GH) Je maakt *eenmalig* een fork in je GitHub account van de keuzethemas-repository (bijv. `jbdemo`).
+2. (GH) Je maakt in die fork een branch voor je eigen werk, bijvoorbeeld onder je eigen naam (`hans`).
+3. (JH) je maakt in Jupyter Hub een lokale *clone* van je fork in GitHub; zorg ervoor dat je eigen branch actief is.
+4. (JH) je maakt lokaal wijzigingen in de bestanden; deze *commit* je in je eigen branch.
+5. (JH) je *pusht* de lokale wijzigingen naar je GitHub fork.
+6. (GH) indien nodig, maak je in GitHub een *pull request* van je eigen branch naar de main-branch van de originele repository.
+
+Hierin staat (GH) voor acties die je in je online in je GitHub account uitvoert. (JH) staat voor acties die je op de i&i Jupyter Hub uitvoert.
+De eerste 3 stappen voer je eenmaal uit. De laatste 3 stappen herhaal je zovaak als nodig is.
