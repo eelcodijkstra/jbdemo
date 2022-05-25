@@ -34,8 +34,7 @@ parts:
   - file: sphinx-extensions/sphinx-extensions  
     sections:
     - file: sphinx-extensions/sphinx-exercise
-#    - file: sphinx-extensions/sphinx-assessment
-    - file: sphinx-extensions/assessment  
+    - file: sphinx-extensions/sphinx-assessment
     - file: sphinx-extensions/sphinx-graphviz
     - file: sphinx-extensions/sphinx-todo  
 
