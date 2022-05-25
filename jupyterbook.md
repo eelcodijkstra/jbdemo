@@ -9,6 +9,10 @@ Met Jupyter Book kun je Markdown (MyST) bestanden en Jupyter Notebooks combinere
 Zowel in het Markdown-formaat als in Jupyter Notebooks kun je gebruik maken van uitvoerbare code-cellen, waarmee je een *interactief executeerbaar boek* krijgt.
 Dit maakt het erg geschikt voor informatica-onderwijs.
 
+:::{graphviz}
+:align: center
+:caption: De Jupyter Book keten
+
 digraph G {
   rankdir=LR
   node [shape=box]
