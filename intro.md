@@ -1,7 +1,7 @@
 # Welkom bij de Jupyter Book demo
 
-Dit *Jupyter Book* bevat een demonstratie en uitleg van het gebruik van Jupyter Notebooks en Jupyter Book voor het publiceren van het informatica *keuzethema's* materiaal.
-Daarnaast beschrijft dit boek de infrastructuur die i&i opgezet heeft voor docenten/auteurs.
+*Jupyter Book* biedt veel mogelijkheden voor het publiceren van het informatica *keuzethema's* materiaal.
+Dit *Jupyter Book* toont een aantal van de mogelijkheden, en beschrijft de infrastructuur die i&i opgezet heeft voor docenten/auteurs.
 
 ````{panels}
 
@@ -14,7 +14,7 @@ Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
 * {ref}`Databases: SQL join <sqlite-2>`
 ---
 
-Jupyter Notebook
+{ref}`Jupyter Notebook <jupyter_notebook>`
 ^^^
 Een notebook combineert opgemaakte tekst met code-cellen die de lezer kan uitvoeren en aanpassen.
 ````
