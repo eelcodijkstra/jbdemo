@@ -39,9 +39,10 @@ sphinx:
   extra_extensions:
     - sphinx_exercise
     - sphinx.ext.graphviz
+    - sphinx_assessment
   local_extensions:
     todo: ./ext
-    sphinx_assessment: ./ext/sphinx-assessment
+#    sphinx_assessment: ./ext/sphinx-assessment
   config:
     language: nl  
     todo_include_todos: true
