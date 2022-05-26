@@ -3,3 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - xeus-sqlite=0.1.0
+  - rise
+  - python
+  - numpy
+  - pip
+  - pip:
+    - matplotlib
+    - elm_kernel
