@@ -50,5 +50,6 @@ parts:
 - caption: Rest
   chapters:
   - file: over-dit-boek
+  - file: rest
   - file: todos
   - file: todolist
