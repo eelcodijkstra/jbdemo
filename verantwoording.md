@@ -5,6 +5,7 @@ Deze betreffen de voorkeur voor het materiaal; het kan in voorkomende gevallen z
 
 Belangrijke argumenten voor de keuze's zijn:
 
+* de didactische mogelijkheden, in het bijzonder voor informatica-onderwijs
 * continuïteit: de infrastructuur moet over 10 jaar (of langer) nog beschikbaar en up-to-date zijn (bijvoorbeeld met betrekking tot beveiliging);
 * open source (waar mogelijk)
 * waar mogelijk/zinvol, naast publicatie op het web, ook publicatie op PDF/papier (geheel of gedeeltelijk).
@@ -16,6 +17,19 @@ Belangrijke argumenten voor de keuze's zijn:
     * dit geeft de meeste mogelijkheden voor automatische verwerking, incl. versiebeheer
 
 ## Jupyter Notebook
+
+Jupyter Notebook (https://jupyter.org) is een veel gebruikt hulpmiddel voor o.a. Data Science onderzoekers, voor het uitvoeren van onderzoek en voor het publiceren van de resultaten.
+Andere onderzoekers kunnen het oorspronkelijke onderzoek daarmee herhalen en analyseren.
+Jupyter Notebook vormt zo een belangrijke stap naar Open Research.
+
+Voor het onderwijs biedt de combinatie van tekst en uitvoerbare code veel mogelijkheden. Zie bijvoorbeeld: 
+
+* [Teaching and learning with Jupyter](https://jupyter4edu.github.io/jupyter-edu-book/)
+* https://www.epfl.ch/education/educational-initiatives/cede/digitaltools/jupyter-notebooks-for-education/
+* https://www.surf.nl/jupyter-notebook-toegankelijke-en-interactieve-data-analyse-voor-onderzoek-en-onderwijs
+
+
+Jupyter Notebook werkt als een web-applicatie: gebruikers hoeven geen software te installeren.
 
 Jupyter Notebook begint een belangrijk professioneel hulpmiddel te worden in de wereld van de Data Science, AI en gerelateerd onderzoek. Er is een grote en levendige community, die borg staat voor de *continuïteit* van deze infrastructuur.
 
@@ -31,9 +45,10 @@ Een Jupyter Book combineert een aantal Notebooks en Markdown-bestanden tot een e
 Sphinx is een systeem waarmee veel Python-gerelateerde documentatie (en documenten) gemaakt worden.
 Hoewel dit meestal web-documenten zijn (html), maakt Sphinx het ook mogelijk om LaTex documenten aan te maken, voor publicatie als PDF. (*Voor ons materiaal werkt LaTeX-publicatie nog niet.*)
 
-Jupyter Book is een onderdeel van het "executable books" project, waarmee boeken met interactieve code gepubliceerd kunnen worden.
+Jupyter Book biedt, door het bundelen van Jupyter Notebooks en Markdown documenten, een volgende stap voor het gebruik van Jupyter Notebooks in het onderwijs.
+De [executable books website](https://executablebooks.org/en/latest/gallery.html) bevat een grote reeks voorbeelden van onderwijsmateriaal gemaakt met Jupyter Book en Jupyter Notebooks.
 
-Zowel Sphinx en Jupyter Book zijn open source projecten, met een grote en levendige community.
+Zowel Jupyter, Sphinx als Jupyter Book zijn open source projecten, met een grote en levendige community.
 
 :::{graphviz}
 :align: center
