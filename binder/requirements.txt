@@ -1,2 +1,4 @@
+numpy
+matplotlib
 elm_kernel
 rise
