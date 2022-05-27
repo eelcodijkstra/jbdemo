@@ -18,7 +18,8 @@ Dit boek, *jbdemo*, bevat een aantal voorbeelden hoe een online Jupyter Book eru
 :::{rubric} experimenteer met executeerbare cellen
 :::
 
-Experimenteer met de "executeerbare cellen" in de voorbeelden in de Elm-pagina en in de SQLite pagina.
+Experimenteer met de "executeerbare cellen" in de voorbeelden in de Elm-pagina en in de SQLite pagina,
+en op de pagina {ref}`Jupyter Notebook <jupyter_notebook>`.
 
 * gebruik de "Live Code" button onder de "raket" bovenin, op die pagina's.
 * verander de code in een code-cell, en "run" die cel opnieuw.

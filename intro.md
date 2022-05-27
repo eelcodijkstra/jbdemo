@@ -50,8 +50,7 @@ bijvoorbeeld multiple choice, drag-&-drop, Parsons problems, fill-in-the-blank.
 Je kunt dit *book* bestuderen als voorbeeld van een Jupyter Book.
 Probeer de "live code" voorbeelden, en bekijk eens een Jupyter Notebook via "Binder".
 Als gebruiker kun je feedback op het materiaal leveren, bijvoorbeeld als een "GitHub issue".
-
-Zie verder: {ref}`eerste kennismaking <eerste-kennismaking>`
+Zie: {ref}`eerste kennismaking <eerste-kennismaking>`
 
 :::{rubric} Aanpassen van Jupyter Books (docenten)
 :::
