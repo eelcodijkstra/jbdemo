@@ -43,9 +43,10 @@ parts:
   chapters:
   - file: kennismaking  
   - file: jb-infrastructuur
-  - file: organisatie
   - file: verantwoording
-  - file: workflows
+  - file: workflow-1
+  - file: workflow-2  
+  - file: organisatie
 
 - caption: Rest
   chapters:

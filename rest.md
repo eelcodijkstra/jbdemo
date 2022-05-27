@@ -62,3 +62,48 @@ Deze code kan steeds in de context van het Jupyter Notebook uitgevoerd en getest
 
 In Jupyter Book kunnen we deze elementen ook nog combineren met interactieve toetsvragen, bijvoorbeeld Multiple Choice vragen, invulvragen, of "Parsons' puzzles" voor programmeren.
 
+
+## Eigen aanpassingen
+
+* JH: maak een eigen *branch* (bijvoorbeeld met je naam, initialen) voor je eigen aanpassingen.
+    * gebruik de *main* branch als uitgangspunt
+* JH: 
+
+## Werken met nieuwe (eigen) content
+
+* GitHub: maak een *fork* van de template-repository
+
+
+## Over git en GitHub
+
+`git` is één van de meest gebruikte systemen voor versiebeheer. git is ontwikkeld door Linus Torvalds, de geestelijk van Linux.
+``GitHub` is één van de meest gebruikte toepassingen voor het beheren van open source software: naast het bewaren van de source code in repositories biedt GitHub tegenwoordig ook mogelijkheden voor communicatie en project-organisatie.
+
+Een git-repository bevat één of meer *branches*; de hoofd-branch is *main* (vroeger *master*).
+Een branch bestaat uit een verzameling bestanden.
+Een branch een geschiedenis van *commits*: elke commit bestaat uit een reeks wijzigingen in één of meer bestanden.
+
+figuur: historie van een verzameling bestanden in git.
+
+(We kunnen hiervan zelf een voorbeeld maken, op basis van de oefeningen van GitHub. Of, in het kader van onze eigen flow. Zie in GitHub: insights/network
+
+
+
+De manier van werken is als volgt:
+
+1. (GH) Je maakt *eenmalig* een fork in je GitHub account van de keuzethemas-repository (bijv. `jbdemo`).
+2. (GH) Je maakt in die fork een branch voor je eigen werk, bijvoorbeeld onder je eigen naam (`hans`).
+3. (JH) je maakt in Jupyter Hub een lokale *clone* van je fork in GitHub; zorg ervoor dat je eigen branch actief is.
+4. (JH) je maakt lokaal wijzigingen in de bestanden; deze *commit* je in je eigen branch.
+5. (JH) je *pusht* de lokale wijzigingen naar je GitHub fork.
+6. (GH) indien nodig, maak je in GitHub een *pull request* van je eigen branch naar de main-branch van de originele repository.
+
+Hierin staat (GH) voor acties die je in je online in je GitHub account uitvoert. (JH) staat voor acties die je op de i&i Jupyter Hub uitvoert.
+De eerste 3 stappen voer je eenmaal uit. De laatste 3 stappen herhaal je zovaak als nodig is.
+
+---
+
+
+* bekijk de Jupyter Book inhoudsopgave (`_toc.yml`)
+    * dit is een YAML-document: de indentatie heeft betekenis (als in Python)
+* bekijk een Markdown-pagina (als "raw")
