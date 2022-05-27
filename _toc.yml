@@ -41,11 +41,11 @@ parts:
 - caption: Infrastructuur
   numbered: true
   chapters:
+  - file: kennismaking  
   - file: jb-infrastructuur
   - file: organisatie
   - file: verantwoording
   - file: workflows
-  - file: kennismaking
 
 - caption: Rest
   chapters:

@@ -33,13 +33,39 @@ De infrastructuur en hulpmiddelen om van een reeks Notebooks een gepubliceerd Ju
 
 ````{panels}
 
-{ref}`Oefeningen<sphinx-exercise>`
+{ref}`Opdrachten<sphinx-exercise>`
 ^^^
-Het de oefeningen-extensie kun je opdrachten formuleren en de uitwerkingen beschrijven.
+Met de *exercise*-extensie kun je opdrachten formuleren en de uitwerkingen beschrijven.
 ---
 
 {ref}`Toetsvragen<sphinx-assessment>`
 ^^^
-Met de toetsvragen-extensie kun je allerlei soorten toetsvragen formuleren,
-bijvoorbeeld multiple choice, drag-&-drop, Parsons, fill-in-the-blank.
+Met de *assessment*-extensie kun je allerlei soorten toetsvragen formuleren,
+bijvoorbeeld multiple choice, drag-&-drop, Parsons problems, fill-in-the-blank.
 ````
+
+:::{rubric} Jupyter Book voor gebruikers
+:::
+
+Je kunt dit *book* bestuderen als voorbeeld van een Jupyter Book.
+Probeer de "live code" voorbeelden, en bekijk eens een Jupyter Notebook via "Binder".
+Als gebruiker kun je feedback op het materiaal leveren, bijvoorbeeld als een "GitHub issue".
+
+Zie verder: {ref}`eerste kennismaking <eerste-kennismaking>`
+
+:::{rubric} Aanpassen van Jupyter Books (docenten)
+:::
+
+Als docent kun je het materiaal aanpassen aan je eigen behoefte.
+In het bijzonder kun je een selectie maken uit het materiaal:
+dat is een kwestie van het aanpassen van de inhoudsopgave, en opnieuw genereren en publiceren van het *book*.
+Zie de "docenten-flow".
+
+:::{rubric} Maken van Jupyter Books (docenten, auteurs)
+:::
+
+Voor het maken van eigen materiaal met Jupyter Books heb je meer kennis nodig van MyST Markdown, van Jupyter Notebook, en van de Sphinx extensions.
+Dat hoeft niet allemaal tegelijk: je kunt klein beginnen met een enkele toetsvraag, opdracht of les (hoofdstuk),
+in de context van bestaand materiaal.
+
+Voor het organiseren van omvangrijker materiaal heb je wat meer kennis van Jupyter Book nodig.

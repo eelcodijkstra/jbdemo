@@ -1,5 +1,15 @@
 # Workflows
 
+
+
+* bekijk de Jupyter Book inhoudsopgave (`_toc.yml`)
+    * dit is een YAML-document: de indentatie heeft betekenis (als in Python)
+* bekijk een Markdown-pagina (als "raw")
+
+
+
+
+
 ## Werken met bestaande content
 
 Het lesmateriaal is in GitHub opgeslagen in de vorm van git(hub)-repositories.

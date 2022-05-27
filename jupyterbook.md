@@ -39,4 +39,10 @@ Als je extra metadata toevoegt dan kun je ook "executable code cells" gebruiken 
 
 ## Jupyter Notebook
 
+Jupyter Book maakt het gebruik van MyST Markdown mogelijk in een Jupyter Notebook.
+Dit betekent dat je voor de tekst-elementen in het notebook veel meer mogelijkheden hebt dan de standaard Markdown.
 
+## Sphinx extensions
+
+Jupyter Book maakt gebruik van Sphinx: dit betekent dat Shpinx-extensions ook bruikbaar zijn voor Jupyter Book.
+Enkele nuttige extensions voor gebruik in het onderwijs zijn `sphinx-exercise` (ontwikkeld voor Jupyter Book) en `sphinx-assessment` (ontwikkeld voor het i&i lesmateriaal).
