@@ -44,6 +44,16 @@ jbpublish jbdemo
 
 ## "commit" en "push" de veranderingen naar GitHub
 
+:::{admonition} GitHub toegang
+Om gegevens naar GitHub te kunnen schrijven, moet je toegang hebben tot de bewuste repostory.
+In plaats van een wachtwoord gebruikt GitHub daarvoor tegenwoordig een Personal Access Token (PAT).
+Dit moet je aanmaken in je GitHub account: zie https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.
+Voor de veiligheid kun je de geldigheid hiervan beperken tot "repo", en tot een periode van bijv. een week.
+Dat is erg aan te raden, omdat een PAT dezelfde rechten geeft als je username/password combinatie.
+
+*Kopieer en bewaar dit token zorgvuldig en veilig*. Het token is alleen zichtbaar bij de eerste generatie, als je het kwijt bent moet je een nieuwe aanmaken.
+:::
+
 Selecteer links de Git-plugin. Je ziet nu bij "Changed" het gewijzigde bestand staan. (Dit kunnen er meerdere zijn.)
 Je moet nu de bestanden van de wijziging klaarzetten voor de *commit*, in de "Staging Area". Klik per ""Changed" bestand dat je wilt bewaren in de bijbehorende regel op de "+": "Stage this change".
 
@@ -54,7 +64,7 @@ In dit stadium kun je bestanden vrijelijk verplaatsen tussen "Changed" en "Stage
 Je maakt nu de "Staged" bestanden definitief (in je lokale clone-repository) door een "Commit": geef een korte beschriving in de "Summary" regel, en vul deze eventueel aan in het "Description" blok.
 
 Nu moet je de wijziging nog "pushen" naar je GitHub repository. Klik daarvoor op het rechter "upstream" wolkje met de oranje stip (in de linker kolom bovenin).
-Nu wordt je naam/wachtwoord gevraagd. Vul in plaats van je wachtwoord de *key* in die je eerder aangemaakt hebt.
+Nu wordt je naam/wachtwoord gevraagd. Vul je username in, en in plaats van je wachtwoord het *PAT* token in die je eerder aangemaakt hebt.
 
 Als alles goed werkt is nu je GitHub repository bijgewerkt, met (i) een eigen branch; (ii) met een gewijzigd bestand *intro.md*. Controleer op de GitHub website of dit het geval is:
 
