@@ -1,3 +1,4 @@
+(workflow-aanpassen)=
 # Workflow: bestaand materiaal aanpassen
 
 In de vorige workflow heb je gezien hoe je bestaand materiaal kunt publiceren.

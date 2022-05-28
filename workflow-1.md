@@ -1,3 +1,4 @@
+(workflow-publiceren)=
 # Workflow: bestaand materiaal publiceren
 
 In deze pagina beschrijven we hoe je als docent of auteur bestaand materiaal kunt aanpassen.

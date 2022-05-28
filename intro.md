@@ -58,7 +58,7 @@ Zie: {ref}`eerste kennismaking <eerste-kennismaking>`
 Als docent kun je het materiaal aanpassen aan je eigen behoefte.
 In het bijzonder kun je een selectie maken uit het materiaal:
 dat is een kwestie van het aanpassen van de inhoudsopgave, en opnieuw genereren en publiceren van het *book*.
-Zie de "docenten-flow".
+Zie de {ref}`workflow voor publiceren<workflow-publiceren>` en {ref}`workflow voor aanpassen <workflow-aanpassen>`.
 
 :::{rubric} Maken van Jupyter Books (docenten, auteurs)
 :::
