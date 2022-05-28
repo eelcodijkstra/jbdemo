@@ -44,11 +44,11 @@ jbpublish jbdemo
 
 ## "commit" en "push" de veranderingen naar GitHub
 
-:::{admonition} GitHub toegang
-Om gegevens naar GitHub te kunnen schrijven, moet je toegang hebben tot de bewuste repostory.
+:::{admonition} GitHub toegang: Personal Access Token
+Om gegevens naar GitHub te kunnen schrijven, moet je je authenticeren.
 In plaats van een wachtwoord gebruikt GitHub daarvoor tegenwoordig een Personal Access Token (PAT).
 Dit moet je aanmaken in je GitHub account: zie https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.
-Voor de veiligheid kun je de geldigheid hiervan beperken tot "repo", en tot een periode van bijv. een week.
+Voor de veiligheid kun je de geldigheid hiervan beperken tot "repo" en tot een korte periode.
 Dat is erg aan te raden, omdat een PAT dezelfde rechten geeft als je username/password combinatie.
 
 *Kopieer en bewaar dit token zorgvuldig en veilig*. Het token is alleen zichtbaar bij de eerste generatie, als je het kwijt bent moet je een nieuwe aanmaken.
