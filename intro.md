@@ -9,8 +9,8 @@ Dit *Jupyter Book* toont een aantal van de mogelijkheden, en beschrijft de infra
 ^^^
 Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
 
-* {ref}`Functioneel programmeren: Elm voorbeeld <Elm-voorbeeld>`
-* {ref}`Physical computing: microbit opdracht <microbit-1b>`
+* {ref}`Functioneel programmeren: Elm <Elm-voorbeeld>`
+* {ref}`Physical computing: microbit <microbit-1b>`
 * {ref}`Databases: SQL join <sqlite-2>`
 ---
 
