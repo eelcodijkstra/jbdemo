@@ -52,3 +52,4 @@ sphinx:
     graphviz_output_format: "svg"
 
 exclude_patterns: [ext/*,_build, Thumbs.db, .DS_Store, ".ipynb_checkpoints/*", "**.ipynb_checkpoints"]
+only_build_toc_files: true
