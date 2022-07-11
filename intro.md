@@ -3,8 +3,8 @@
 *Jupyter Book* biedt veel mogelijkheden voor het publiceren van het informatica *keuzethema's* materiaal.
 Dit *Jupyter Book* toont een aantal van de mogelijkheden, en beschrijft de infrastructuur die i&i opgezet heeft voor docenten/auteurs.
 
-````{panels}
-
+::::{grid} 2
+:::{grid-item-card}
 {ref}`Voorbeelden <voorbeeld-paginas>`
 ^^^
 Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
@@ -12,37 +12,44 @@ Voorbeelden uit het keuzethema-lesmateriaal vormgegeven met Jupyter Book.
 * {ref}`Functioneel programmeren: Elm <Elm-voorbeeld>`
 * {ref}`Physical computing: microbit <microbit-1b>`
 * {ref}`Databases: SQL join <sqlite-2>`
----
+:::
 
+:::{grid-item-card}
 {ref}`Jupyter Notebook <jupyter_notebook>`
 ^^^
 Een notebook combineert opgemaakte tekst met code-cellen die de lezer kan uitvoeren en aanpassen.
-````
+:::
+::::
 
-````{panels}
-
+::::{grid} 2
+:::{grid-item-card}
 {ref}`Jupyter Book <jupyter_book>`
 ^^^
 Jupyter Book combineert een aantal notebooks tot een boek. MyST Markdown geeft extra mogelijkheden voor de opmaak.
----
+:::
 
+:::{grid-item-card}
 {ref}`Auteursomgeving <jb_infrastructuur>`
 ^^^
 De infrastructuur en hulpmiddelen om van een reeks Notebooks een gepubliceerd Jupyter Book te maken.
-````
+:::
+::::
 
-````{panels}
+::::{grid} 2
 
+:::{grid-item-card}
 {ref}`Opdrachten<sphinx-exercise>`
 ^^^
 Met de *exercise*-extensie kun je opdrachten formuleren en de uitwerkingen beschrijven.
----
+:::
 
+:::{grid-item-card}
 {ref}`Toetsvragen<sphinx-assessment>`
 ^^^
 Met de *assessment*-extensie kun je allerlei soorten toetsvragen formuleren,
 bijvoorbeeld multiple choice, drag-&-drop, Parsons problems, fill-in-the-blank.
-````
+:::
+::::
 
 :::{rubric} Jupyter Book voor gebruikers
 :::
