@@ -1,0 +1,807 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo’s en wensen &#8212; Jupyter Book demo</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/assessment.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/patch-next-bug.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/assessment.js"></script>
+    <script src="_static/js/patch.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Zoeken" href="search.html" />
+    <link rel="next" title="Lijst van todo’s" href="todolist.html" />
+    <link rel="prev" title="Rest" href="rest.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Jupyter Book demo</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welkom bij de Jupyter Book demo
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voorbeelden
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="voorbeelden/voorbeelden.html">
+   1. Keuzethema-voorbeelden
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/3_elm-list.html">
+     1.1. Elm: Intro Lists
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/microbit-1b.html">
+     1.2. Microbit les 1b
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/sqlite-2.html">
+     1.3. Combineren van tabellen: join
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="voorbeelden/overige.html">
+   2. Overige voorbeelden
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/sphinx-vb.html">
+     2.1. Sphinx elementen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/mchoice-demo.html">
+     2.2. Toetsvragen-demo
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/opdracht-demo.html">
+     2.3. Opdracht-demo
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/uitwerkingen.html">
+     2.4. Uitwerkingen van de opdrachten
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Notebook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-notebook.html">
+   3. Jupyter Notebook
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbook.html">
+   4. Over Jupyter Book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   5. Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   6. Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sphinx-extensions/sphinx-extensions.html">
+   7. Sphinx-extensies
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-exercise.html">
+     7.1. sphinx-exercise
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-assessment.html">
+     7.2. sphinx-assessment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-graphviz.html">
+     7.3. sphinx-graphviz
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-todo.html">
+     7.4. sphinx-todo
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Infrastructuur
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kennismaking.html">
+   8. Een eerste kennismaking
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jb-infrastructuur.html">
+   9. De Jupyter Book infrastructuur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="verantwoording.html">
+   10. Verantwoording van keuze’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow-1.html">
+   11. Workflow: bestaand materiaal publiceren
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow-2.html">
+   12. Workflow: bestaand materiaal aanpassen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="organisatie.html">
+   13. Organisatie van het materiaal
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Rest
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="over-dit-boek.html">
+   Over dit Jupyter boek
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rest.html">
+   Rest
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Todo’s en wensen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todolist.html">
+   Lijst van todo’s
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/eelcodijkstra/jbdemo/main?urlpath=tree/todos.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/eelcodijkstra/jbdemo"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/eelcodijkstra/jbdemo/issues/new?title=Issue%20on%20page%20%2Ftodos.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/todos.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openen-in-binder-en-in-jupyter-hub-i-i">
+   Openen in Binder en in Jupyter Hub (i&amp;i)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wens-een-extensie-voor-het-bijhouden-van-vorderingen">
+   Wens: een extensie voor het bijhouden van vorderingen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips-voor-het-maken-van-lesmateriaal">
+   Tips voor het maken van lesmateriaal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fout-in-jb-navigatie-onderaan-de-pagina">
+   Fout (in JB): navigatie onderaan de pagina
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vertaling-van-admonitions">
+   Vertaling van admonitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-games">
+   Jupyter games
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-lite-p5js">
+   Jupyter Lite - P5js?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactieve-slides">
+   Interactieve slides
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#done-onderstaande-zijn-al-uitgevoerd">
+   DONE - onderstaande zijn al uitgevoerd
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cell-default-markdown">
+     Cell default - Markdown?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Todo’s en wensen</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openen-in-binder-en-in-jupyter-hub-i-i">
+   Openen in Binder en in Jupyter Hub (i&amp;i)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wens-een-extensie-voor-het-bijhouden-van-vorderingen">
+   Wens: een extensie voor het bijhouden van vorderingen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips-voor-het-maken-van-lesmateriaal">
+   Tips voor het maken van lesmateriaal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fout-in-jb-navigatie-onderaan-de-pagina">
+   Fout (in JB): navigatie onderaan de pagina
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vertaling-van-admonitions">
+   Vertaling van admonitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-games">
+   Jupyter games
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-lite-p5js">
+   Jupyter Lite - P5js?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactieve-slides">
+   Interactieve slides
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#done-onderstaande-zijn-al-uitgevoerd">
+   DONE - onderstaande zijn al uitgevoerd
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cell-default-markdown">
+     Cell default - Markdown?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="todo-s-en-wensen">
+<h1>Todo’s en wensen<a class="headerlink" href="#todo-s-en-wensen" title="Permalink naar deze titel">#</a></h1>
+<div class="section" id="openen-in-binder-en-in-jupyter-hub-i-i">
+<h2>Openen in Binder en in Jupyter Hub (i&amp;i)<a class="headerlink" href="#openen-in-binder-en-in-jupyter-hub-i-i" title="Permalink naar deze titel">#</a></h2>
+<div class="admonition" id="todo-0">
+<p class="admonition-title">Te doen</p>
+<p><strong>Openen in Binder en in Jupyter Hub (i&amp;i)</strong></p>
+<p>Deze inleiding in Jupyter en Jupyter Book moet links hebben voor het openen in Binder en voor het openen in Jupyter Hub, op de i&amp;i hub. Dit laatste is voor het oefenen met de infrastructuur. Een gebruiker (docent) moet in het laatste geval wel een account hebben op deze hub.</p>
+</div>
+</div>
+<div class="section" id="wens-een-extensie-voor-het-bijhouden-van-vorderingen">
+<h2>Wens: een extensie voor het bijhouden van vorderingen<a class="headerlink" href="#wens-een-extensie-voor-het-bijhouden-van-vorderingen" title="Permalink naar deze titel">#</a></h2>
+<p>Eén van de voordelen van Runestone Interactive is dat deze het mogelijk maakt voor een leerling om zijn vorderingen te zien - en voor een docent om de vorderingen van de leerlingen te zien.</p>
+<p>Dit kunnen we alleen realiseren als we een dienst (server) waarop de leerling (en de docent) op de een of andere manier moet inloggen (hoeft niet onder de eigen naam).</p>
+</div>
+<div class="section" id="tips-voor-het-maken-van-lesmateriaal">
+<h2>Tips voor het maken van lesmateriaal<a class="headerlink" href="#tips-voor-het-maken-van-lesmateriaal" title="Permalink naar deze titel">#</a></h2>
+<p>We moeten een hoofdstuk (of meer) wijden aan tips voor het maken van lesmateriaal in het algemeen; en met behulp van Jupyter Book in het bijzonder.</p>
+<p>We kunnen daarbij een opzet maken die door een docent zo als template overgenomen kan worden.</p>
+</div>
+<div class="section" id="fout-in-jb-navigatie-onderaan-de-pagina">
+<h2>Fout (in JB): navigatie onderaan de pagina<a class="headerlink" href="#fout-in-jb-navigatie-onderaan-de-pagina" title="Permalink naar deze titel">#</a></h2>
+<p>Deze navigatie moet netjes links en rechts staan; in de huidige versie staat deze alleen links. (Ik heb deze in een ander JB al eens aangepast?)</p>
+</div>
+<div class="section" id="vertaling-van-admonitions">
+<h2>Vertaling van admonitions<a class="headerlink" href="#vertaling-van-admonitions" title="Permalink naar deze titel">#</a></h2>
+<p>Jupyter Book (Sphinx) biedt allerlei “admonitions” voor tips, waarschuwingen e.d. in de tekst. Deze worden voorzien van een gekleurde kop met een icoontje.</p>
+<p>In het Nederlandstalige materiaal willen we graag dat deze admonitions in het Nederlands vertaald worden. Bij voorkeur willen we zelf de vertaling bepalen; de “default” vertalingen zijn niet altijd geschikt.</p>
+</div>
+<div class="section" id="jupyter-games">
+<h2>Jupyter games<a class="headerlink" href="#jupyter-games" title="Permalink naar deze titel">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://blog.jupyter.org/jupyter-games-cda20dc15a21">https://blog.jupyter.org/jupyter-games-cda20dc15a21</a></p></li>
+</ul>
+</div>
+<div class="section" id="jupyter-lite-p5js">
+<h2>Jupyter Lite - P5js?<a class="headerlink" href="#jupyter-lite-p5js" title="Permalink naar deze titel">#</a></h2>
+<p>Jupyter Lite is een versie van Jupyter die geheel in de browser uitgevoerd kan worden. Dit kan bijvoorbeeld gebruikt worden in combinatie met de P5js kernel.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://blog.jupyter.org/xeus-lite-379e96bb199d">https://blog.jupyter.org/xeus-lite-379e96bb199d</a></p></li>
+</ul>
+</div>
+<div class="section" id="interactieve-slides">
+<h2>Interactieve slides<a class="headerlink" href="#interactieve-slides" title="Permalink naar deze titel">#</a></h2>
+<ul class="simple">
+<li><p>gebruik van i&amp;i Jupyter Hub (door docent)?</p></li>
+<li><p>gebruik van MyBinder</p></li>
+<li><p>via RISE</p></li>
+<li><p>nog uitzoeken: via Voila?</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="done-onderstaande-zijn-al-uitgevoerd">
+<h2>DONE - onderstaande zijn al uitgevoerd<a class="headerlink" href="#done-onderstaande-zijn-al-uitgevoerd" title="Permalink naar deze titel">#</a></h2>
+<div class="section" id="cell-default-markdown">
+<h3>Cell default - Markdown?<a class="headerlink" href="#cell-default-markdown" title="Permalink naar deze titel">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/40382454/jupyter-notebook-new-cell-type-default">https://stackoverflow.com/questions/40382454/jupyter-notebook-new-cell-type-default</a></p></li>
+<li><p>onderstaande werkt, en is hier zo ingesteld.</p></li>
+</ul>
+<p>In JupyterLab, you can go to Settings -&gt; Advanced Settings manager -&gt; Notebook and then add the following in “User Preferences”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;defaultCell&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "eelcodijkstra/jbdemo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="rest.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Rest</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="todolist.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Lijst van todo’s</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Eelco Dijkstra (i&i)<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

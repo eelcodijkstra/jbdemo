@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13. Organisatie van het materiaal &#8212; Jupyter Book demo</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/assessment.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/patch-next-bug.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/assessment.js"></script>
+    <script src="_static/js/patch.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Zoeken" href="search.html" />
+    <link rel="next" title="Over dit Jupyter boek" href="over-dit-boek.html" />
+    <link rel="prev" title="12. Workflow: bestaand materiaal aanpassen" href="workflow-2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Jupyter Book demo</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welkom bij de Jupyter Book demo
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voorbeelden
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="voorbeelden/voorbeelden.html">
+   1. Keuzethema-voorbeelden
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/3_elm-list.html">
+     1.1. Elm: Intro Lists
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/microbit-1b.html">
+     1.2. Microbit les 1b
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/sqlite-2.html">
+     1.3. Combineren van tabellen: join
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="voorbeelden/overige.html">
+   2. Overige voorbeelden
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/sphinx-vb.html">
+     2.1. Sphinx elementen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/mchoice-demo.html">
+     2.2. Toetsvragen-demo
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/opdracht-demo.html">
+     2.3. Opdracht-demo
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="voorbeelden/uitwerkingen.html">
+     2.4. Uitwerkingen van de opdrachten
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Notebook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-notebook.html">
+   3. Jupyter Notebook
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jupyter Book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyterbook.html">
+   4. Over Jupyter Book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   5. Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   6. Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sphinx-extensions/sphinx-extensions.html">
+   7. Sphinx-extensies
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-exercise.html">
+     7.1. sphinx-exercise
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-assessment.html">
+     7.2. sphinx-assessment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-graphviz.html">
+     7.3. sphinx-graphviz
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx-extensions/sphinx-todo.html">
+     7.4. sphinx-todo
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Infrastructuur
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kennismaking.html">
+   8. Een eerste kennismaking
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jb-infrastructuur.html">
+   9. De Jupyter Book infrastructuur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="verantwoording.html">
+   10. Verantwoording van keuze’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow-1.html">
+   11. Workflow: bestaand materiaal publiceren
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="workflow-2.html">
+   12. Workflow: bestaand materiaal aanpassen
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   13. Organisatie van het materiaal
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Rest
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="over-dit-boek.html">
+   Over dit Jupyter boek
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rest.html">
+   Rest
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todos.html">
+   Todo’s en wensen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todolist.html">
+   Lijst van todo’s
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/eelcodijkstra/jbdemo"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/eelcodijkstra/jbdemo/issues/new?title=Issue%20on%20page%20%2Forganisatie.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/organisatie.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structuur-van-de-inhoud">
+   13.1. Structuur van de inhoud
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organisatie-van-bestanden">
+     13.1.1. Organisatie van bestanden
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materiaal-met-varianten">
+   13.2. Materiaal met varianten
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voorbeeld-physical-computing">
+     13.2.1. Voorbeeld: Physical computing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Organisatie van het materiaal</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structuur-van-de-inhoud">
+   13.1. Structuur van de inhoud
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organisatie-van-bestanden">
+     13.1.1. Organisatie van bestanden
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#materiaal-met-varianten">
+   13.2. Materiaal met varianten
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voorbeeld-physical-computing">
+     13.2.1. Voorbeeld: Physical computing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="organisatie-van-het-materiaal">
+<h1><span class="section-number">13. </span>Organisatie van het materiaal<a class="headerlink" href="#organisatie-van-het-materiaal" title="Permalink naar deze titel">#</a></h1>
+<p>In dit gedeelte bespreken we een aantal richtlijnen voor de organisatie van het informatica-materiaal.
+Het doel van deze richtlijnen is om het aanpassen van het materiaal voor een andere doelgroep relatief eenvoudig te maken.</p>
+<ul class="simple">
+<li><p>het is in Jupyter Book relatief eenvoudig om een hoofdstuk weg te laten of toe te voegen.</p></li>
+<li><p>in verband met verwijzingen vanuit elders is het in het algemeen handig om de structuur van een hoofdstuk zo goed mogelijk intact te laten; de nummering van de opdrachten e.d. blijft dan gelijk.</p></li>
+</ul>
+<div class="section" id="structuur-van-de-inhoud">
+<h2><span class="section-number">13.1. </span>Structuur van de inhoud<a class="headerlink" href="#structuur-van-de-inhoud" title="Permalink naar deze titel">#</a></h2>
+<p>We gebruiken meestal een structuur met <em>parts</em>, <em>chapters</em> en <em>sections</em>, net als in dit boek:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">book</span>
+<span class="n">root</span><span class="p">:</span> <span class="n">intro</span>
+
+<span class="n">parts</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Voorbeelden</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">voorbeelden</span>
+    <span class="n">sections</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="mi">3</span><span class="n">_elm</span><span class="o">-</span><span class="nb">list</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">microbit</span><span class="o">-</span><span class="mi">1</span><span class="n">b</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">sqlite</span><span class="o">-</span><span class="mi">2</span> 
+
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">overige</span>
+    <span class="n">sections</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">vb</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">mchoice</span><span class="o">-</span><span class="n">demo</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">opdracht</span><span class="o">-</span><span class="n">demo</span>  
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">voorbeelden</span><span class="o">/</span><span class="n">uitwerkingen</span>
+  
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Jupyter</span> <span class="n">Notebook</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">notebook</span>
+  
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Jupyter</span> <span class="n">Book</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">notebooks</span>  
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">markdown</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span>  
+    <span class="n">sections</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">exercise</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">assessment</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">assessment</span>  
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">graphviz</span>
+    <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">extensions</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">todo</span>  
+
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Infrastructuur</span>
+  <span class="n">numbered</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">jb</span><span class="o">-</span><span class="n">infrastructuur</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">organisatie</span>
+
+<span class="o">-</span> <span class="n">caption</span><span class="p">:</span> <span class="n">Rest</span>
+  <span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">over</span><span class="o">-</span><span class="n">dit</span><span class="o">-</span><span class="n">boek</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">todos</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">todolist</span>
+
+</pre></div>
+</div>
+<p>Zie voor meer uitleg over de table-of-contents structuur: <a class="reference external" href="https://jupyterbook.org/customize/toc.html">https://jupyterbook.org/customize/toc.html</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In de bovenstaande aanpak heeft de inleiding van een hoofdstuk, zoals bijvoorbeeld “voorbeelden/voorbeelden.md”,
+alleen een “level 1” hoofdstuk-titel, en geen andere subtitels.
+De section-bestanden beginnen met een “level 1” titel, en kunnen eventueel subtitels bevatten.
+Op deze manier krijg je de hiërarchie en de nummering die je verwacht.</p>
+<p>Als je in de inleiding een kopje nodig hebt, gebruik dan bijvoorbeeld een “rubric”-titel.</p>
+</div>
+<div class="section" id="organisatie-van-bestanden">
+<h3><span class="section-number">13.1.1. </span>Organisatie van bestanden<a class="headerlink" href="#organisatie-van-bestanden" title="Permalink naar deze titel">#</a></h3>
+<p>Plaats alle bestanden van een hoofdstuk bij voorkeur in een aparte hoofdstuk-map.
+Je kunt dan eenvoudig een hoofdstuk weglaten of toevoegen.
+Figuren plaats je bij voorkeur in een sub-map <em>images</em>, zoals in het <em>voorbeelden</em>-hoofdstuk.</p>
+<p><em>Sphinx</em> plaatst alle figuren in de html-bestanden in een enkele map <em>images</em>:
+je moet er dus voor zorgen dat de namen van de figuren in het hele document uniek zijn.</p>
+</div>
+</div>
+<div class="section" id="materiaal-met-varianten">
+<h2><span class="section-number">13.2. </span>Materiaal met varianten<a class="headerlink" href="#materiaal-met-varianten" title="Permalink naar deze titel">#</a></h2>
+<p>Het materiaal voor Physical computing is beschikbaar in verschillende varianten: Arduino, Lego Mindstorms, en micro:bit.
+Deze varianten hebben een deel van de bestanden gemeenschappelijk.
+Een leerling werkt gewoonlijk maar aan één variant: deze wil het liefst een compleet document voor een bepaalde variant.</p>
+<p>Omdat de publicatie-vorm gegenereerd wordt, kunnen we het gemeenschappelijke deel aan de input-zijde van het publicatieproces gelijk houden, terwijl de varianten in het resultaat met kopieën werken.</p>
+<ul class="simple">
+<li><p>combineer de bestanden voor alle varianten in één GitHub repo</p></li>
+<li><p>gebruik per variant een aparte inhoudsopgave (<code class="docutils literal notranslate"><span class="pre">_toc</span></code> bestand)</p>
+<ul>
+<li><p>je kunt bij de “jb build” opdracht opgeven welk toc-bestand gebruikt moet worden.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="voorbeeld-physical-computing">
+<h3><span class="section-number">13.2.1. </span>Voorbeeld: Physical computing<a class="headerlink" href="#voorbeeld-physical-computing" title="Permalink naar deze titel">#</a></h3>
+<p>Het materiaal van Physical computing is beschikbaar in verschillende varianten: microbit-blokjeprogrammeren; Arduino-C++; en Lego Mindstorms. Het ligt voor de hand om een microbit-Python variant toe te voegen.</p>
+<p>Een docent kiest voor een groep leerlingen een bepaalde variant. Het is niet handig als dit gemengd wordt met het materiaal van een andere variant.
+Een deel van het materiaal is onafhankelijk van de gekozen variant. Je wilt dit gemeenschappelijke deel gemeenschappelijk  houden, en kopiëren zoveel mogelijk vermijden.</p>
+<p>Omdat de publicatie-vorm gegenereerd wordt, kunnen we het gemeenschappelijke deel aan de input-zijde van het publicatieproces gelijk houden, terwijl de varianten in het resultaat met kopieën werken.</p>
+<p>Gesuggereerde aanpak:</p>
+<ul class="simple">
+<li><p>de main branch in GitHub bevat het gemeenschappelijke deel</p></li>
+<li><p>de verschillende varianten zijn in de GitHub repo verschillende <em>branches</em>,</p>
+<ul>
+<li><p>deze branches zijn afgeleid van de main-branch, en bevatten ook het gemeenschappelijke deel</p></li>
+<li><p>en hebben per branch daarnaast extra bestanden,</p></li>
+<li><p>met per branch een eigen toc (table of contents)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "eelcodijkstra/jbdemo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="workflow-2.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title"><span class="section-number">12. </span>Workflow: bestaand materiaal aanpassen</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="over-dit-boek.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Over dit Jupyter boek</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Eelco Dijkstra (i&i)<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
